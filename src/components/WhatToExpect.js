@@ -7,8 +7,8 @@ const TextBlock =({src, title, text}) => {
         <div className=" flex-1 h-12 flex items-center flex-col ">
           <img src={src} className="h-12" />
           <h5 className="font-extrabold py-8 text-transparent text-3xl 
-          font-montserat bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">{title}</h5>
-          <p className="font-semibold text-lg">
+          font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400">{title}</h5>
+          <p className="font-semibold text-xl">
            {text}
           </p>
         </div>

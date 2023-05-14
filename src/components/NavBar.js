@@ -12,7 +12,6 @@ const CustomLink = ({ href, title, className = "" }) => {
       href={href}
       className={`${className} pl-10 whitespace-nowrap text-2xl
        uppercase font-bold hover:text-orange-400 transition-colors ease-in-out
-       
        `}
     >
       {title}
@@ -22,20 +21,17 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const MobileCustomLink = ({ href, title, className = "", toggle }) => {
   const router = useRouter();
-
   const handleClick = () => {
-    toggle()
+    toggle() //automatically close the mobile nav div when clicking on a link
     router.push(href);
   };
   return (
     <button
       onClick={handleClick}
       href={href}
-      className={`${className} pl-10 text-2xl text-white whitespace-nowrap py-5 
+      className={`${className} pl-10 text-2xl text-black whitespace-nowrap py-5 
        uppercase font-bold hover:text-orange-400 transition-all ease-in-out
-       border-b-2 border-white
-       ${router.asPath === href ? "text-orange-500" : "text-black"}
-       `}
+       border-b-2 border-black`}
     >
       {title}
     </button>
@@ -44,18 +40,16 @@ const MobileCustomLink = ({ href, title, className = "", toggle }) => {
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="fixed t-0 w-full pt-5 px-10 flex justify-between items-center ">
+    <header className="t-0 w-full pt-5 px-10 flex justify-between items-center">
       <Logo />
-      <div className=" lg:flex justify-between items-center hidden ">
-        <nav className="">
+      <div className="lg:flex justify-between items-center hidden">
+        <nav>
           <CustomLink href="#about" title="About us" />
           <CustomLink href="#projects" title="Projects" />
-
           <CustomLink
             href="https://www.meetup.com/Code-for-Hawaii/events/"
             target="_blank"
@@ -67,31 +61,30 @@ const NavBar = () => {
 
       {/* ____________________mobile menu______________________________ */}
       <button
-        className="flex flex-col justify-center items-center lg:hidden"
+        className="flex flex-col justify-center items-center lg:hidden z-50"
         onClick={handleClick}
       >
         <span
-          className={`bg-orange-400 block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
-          }`}
+          className={`bg-black block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
+          ${ isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}
         ></span>
         <span
-          className={`bg-orange-500 block h-0.5 w-6 rounded-sm m-0.5 ${
+          className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
         <span
-          className={`bg-orange-400 block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
+          className={`bg-black block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
           ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"}`}
         ></span>
       </button>
 
       {isOpen ? (
         <div
-          className=" w-1/3 h-full flex pt-20 pr-10 flex-col justify-between items-end fixed
-      top-0 right-0  bg-black  backdrop-blur-md py-30 z-20"
+          className="w-1/2 max-w-[300px] h-2/3 flex pt-20 pr-10 flex-col justify-end items-end fixed
+      top-0 right-0  bg-white/20  backdrop-blur-md pb-36 z-30 shadow-xl rounded-l-lg"
         >
-          <nav className="  flex flex-col justify-center items-center py-20">
+          <nav className="flex flex-col justify-center items-center pt-60">
             <MobileCustomLink
               href="#about"
               title="About us"
@@ -102,7 +95,6 @@ const NavBar = () => {
               title="Projects"
               toggle={handleClick}
             />
-
             <MobileCustomLink
               href="https://www.meetup.com/Code-for-Hawaii/events/"
               target="_blank"
@@ -110,11 +102,10 @@ const NavBar = () => {
               title="Join us!"
               toggle={handleClick}
             />
-
-            {/* <img
-              src="./assets/chicken.png"
-              className="w-1/3 absolute bottom-2"
-            ></img> */}
+            <img
+              src="./assets/palm.png"
+              className="h-1/3 w-auto absolute top-48 -right-[100px] -rotate-[25deg]"
+            ></img>
           </nav>
         </div>
       ) : null}

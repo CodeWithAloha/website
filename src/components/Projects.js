@@ -6,13 +6,13 @@ import Clients from "./Clients";
 export const ProjectCard = ({ src, title, text, className = "" , handleClick}) => {
   return ( 
     <div
-      className="relative flex-1 flex items-center  pb-4 flex-col text-center rounded-xl 
+      className="relative flex-1 flex items-center  pb-8 flex-col text-center rounded-xl 
      "
       onClick={handleClick}
     >
-      <img src={src} className={`${className}  w-2/3 rounded-xl`} />
-      <h5 className="font-semibold text-xl py-6">{title} </h5>
-      <p className="font-semibold w-4/5  text-lg">{text}</p>
+      <img src={src} className={`${className}  w-2/3 rounded-lg`} />
+      <h5 className="font-semibold text-3xl py-6">{title} </h5>
+      <p className="font-semibold w-3/5  text-xl">{text}</p>
     </div>
   );
 };
@@ -41,11 +41,11 @@ const Projects = () => {
         ></div>) : null}
 
       <img src="./assets/projectsAssets/projects.png" className="h-40 mt-20" />
-      <h2 className="text-5xl xl:text-7xl drop-shadow-xl text-center">
+      <h2 className="text-5xl xl:text-8xl drop-shadow-xl text-center">
         Active projects
       </h2>
 
-      <p className="text-lg font-semibold py-10 text-center w-2/3 pb-20">
+      <p className="text-xl font-semibold py-10 text-center w-2/3 pb-20">
         Here are some projects we are currently working on. Click on a project
         for details. If you have an idea for a civic project{" "}
         <a

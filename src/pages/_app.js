@@ -21,8 +21,6 @@ export default function App({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-
-    
       <Component {...pageProps} />
     </>
   );
