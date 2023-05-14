@@ -31,14 +31,14 @@ const Projects = () => {
       id="projects"
       className=" flex flex-col items-center xl:p-20 px-20 bg-gradient-to-br from-cyan-200 to bg-white-200"
     >
+      {/* _________open a projects for details_________________ */}
 
-{/* _________open a projects for details_________________ */}
-
-     {isOpen ? (
+      {isOpen ? (
         <div
           className=" w-[90%] h-[90%] flex p-20  flex-col justify-between items-end fixed 
       top-0 right-0  z-30 bg-white/90 rounded-b-lg backdrop-blur-md "
-        ></div>) : null}
+        ></div>
+      ) : null}
 
       <img src="./assets/projectsAssets/projects.png" className="h-40 mt-20" />
       <h2 className="text-5xl xl:text-8xl drop-shadow-xl text-center">
@@ -47,14 +47,15 @@ const Projects = () => {
 
       <p className="text-xl font-semibold py-10 text-center w-2/3 pb-20">
         Here are some projects we are currently working on. Click on a project
-        for details. If you have an idea for a civic project{" "}
-        <a
+        for details. If you have an idea for a civic project email us and let's
+        make it happen!
+        {/* <a
           href="#contact"
-          className="text-cyan-400 hover:text-orange-500 hover:underline underline-offset-4"
+          className="text-orange-400 hover:text-cyan-400 hover:underline underline-offset-4"
         >
           email us
-        </a>{" "}
-        and let's make it happen!
+        </a> */}
+        {/* and let's make it happen! */}
       </p>
 
       <div className=" flex pt-20  gap-20 flex-col xl:flex-row">
