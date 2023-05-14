@@ -7,11 +7,12 @@ const HomePage = () => {
     <section className="min-h-screen  bg-gradient-to-tr from-cyan-200 to bg-white">
       <NavBar />
       <div className="h-screen flex items-center xl:pl-[12%] justify-center flex-col xl:flex-row">
-        <div className=" flex-1 scale-75 xl:scale-100 mt-10 ">
+        <div className=" flex-1 scale-75 xl:scale-100 pb-28">
           <img src="master.png" className="w-full " />
         </div>
 
-        <div className="flex flex-col text-right justify-center xl:items-start items-center flex-1  2xl:scale-125 xl:pl-40 ">
+        <div className="flex flex-col text-right justify-center xl:items-start items-center 
+        flex-1  2xl:scale-125 xl:pl-40 ">
           <h4
             className="font-satisfy text-5xl bg-clip-text text-transparent
         bg-gradient-to-r from-red-500 to-yellow-400"
