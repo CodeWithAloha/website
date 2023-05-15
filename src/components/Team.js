@@ -9,7 +9,7 @@ const TeamMember = ({ src, name }) => {
         className="self-center  flex-shrink-0 w-32 h-32 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500"
         src={src}
       />
-      <p className="text-xl font-semibold leading-tight">{name}</p>
+      <p className="text-md xl:text-xl font-semibold leading-tight">{name}</p>
     </div>
   );
 };
@@ -17,10 +17,10 @@ const TeamMember = ({ src, name }) => {
 const Team = () => {
   return (
     <>
-      <h4 className=" text-4xl lg:text-6xl font-semibold font-satisfy w-2/3 text-center  xl:pt-20 mb-8 ">
+      <h4 className=" text-4xl lg:text-5xl font-semibold font-satisfy w-full text-center xl:pt-20 mt-20 mb-8 ">
         Be part of our story
       </h4>
-      <p className="text-xl font-semibold py-4 text-center xl:w-1/2">
+      <p className="text-md xl:text-xl py-4 lg:px-12 text-center  xl:w-1/2">
         You can join any
         <a
           href="#join"
@@ -31,17 +31,11 @@ const Team = () => {
         event and be part of the Code with Aloha team. We meet the first three
         Mondays of every month. Join us, even just to say Aloha!
       </p>
-      <div className="flex flex-row items-center justify-center py-4">
+      <div className="flex flex-row items-center justify-center py-2">
         <AiOutlineMail fontSize="2rem" />
-
-        <h2 className="pl-2 text-2xl">
-          Email:
-          <span className="text-2xl px-2">
-            info@codeforhawaii.org
-          </span>{" "}
-        </h2>
+        <h2 className="pl-2 text-md xl:text-xl">Email:</h2>{" "}
       </div>
-
+      <h2 className="text-md xl:text-xl px-2">info@codeforhawaii.org</h2>{" "}
       <div className="container flex flex-col items-center justify-center  mx-auto pt-10 pb-20">
         <div className="flex flex-row flex-wrap justify-center ">
           <TeamMember src="./assets/TreyGordner.jpeg/" name="Trey Gordner" />

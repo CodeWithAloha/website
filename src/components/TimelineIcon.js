@@ -11,7 +11,7 @@ const TimelineIcon = ({reference}) => {
 
 
   return (
-    <figure className="absolute left-11 stroke-black ">
+    <figure className="absolute left-1 xl:left-11 stroke-black ">
       <svg width="75" height="75" viewBox="0 0 100 100"
       className='-rotate-90'>
         <circle

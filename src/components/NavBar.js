@@ -10,7 +10,7 @@ const CustomLink = ({ href, title, className = "" }) => {
   return (
     <Link
       href={href}
-      className={`${className} pl-10 whitespace-nowrap text-2xl
+      className={`${className} pl-10 whitespace-nowrap text-[1.4rem]
        uppercase font-bold hover:text-orange-400 transition-colors ease-in-out
        `}
     >
@@ -29,9 +29,9 @@ const MobileCustomLink = ({ href, title, className = "", toggle }) => {
     <button
       onClick={handleClick}
       href={href}
-      className={`${className} pl-10 text-2xl text-black whitespace-nowrap py-5 
+      className={`${className} pl-10   lg:text-2xl text-black whitespace-nowrap py-5 
        uppercase font-bold hover:text-orange-400 transition-all ease-in-out
-       border-b-2 border-black`}
+       border-b-[1px] border-black`}
     >
       {title}
     </button>
@@ -53,7 +53,7 @@ const NavBar = () => {
           <CustomLink
             href="https://www.meetup.com/Code-for-Hawaii/events/"
             target="_blank"
-            className="px-2 font-normal font-satisfy text-4xl lowercase"
+            className="font-satisfy text-5xl lowercase"
             title="Join us!"
           />
         </nav>
@@ -66,7 +66,7 @@ const NavBar = () => {
       >
         <span
           className={`bg-black block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
-          ${ isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}
+          ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}
         ></span>
         <span
           className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${
@@ -81,10 +81,10 @@ const NavBar = () => {
 
       {isOpen ? (
         <div
-          className="w-1/2 max-w-[300px] h-2/3 flex pt-20 pr-10 flex-col justify-end items-end fixed
+          className="lg:w-1/2 max-w-[300px] w-[80%] flex pt-20 pr-10 flex-col justify-end items-end fixed
       top-0 right-0  bg-white/20  backdrop-blur-md pb-36 z-30 shadow-xl rounded-l-lg"
         >
-          <nav className="flex flex-col justify-center items-center pt-60">
+          <nav className="flex flex-col justify-center items-center pt-8">
             <MobileCustomLink
               href="#about"
               title="About us"
@@ -98,14 +98,11 @@ const NavBar = () => {
             <MobileCustomLink
               href="https://www.meetup.com/Code-for-Hawaii/events/"
               target="_blank"
-              className="px-2 font-normal font-satisfy text-5xl lowercase"
+              className=" font-normal font-satisfy  text-2xl lg:text-5xl lowercase"
               title="Join us!"
               toggle={handleClick}
             />
-            <img
-              src="./assets/palm.png"
-              className="h-1/3 w-auto absolute top-48 -right-[100px] -rotate-[25deg]"
-            ></img>
+            
           </nav>
         </div>
       ) : null}

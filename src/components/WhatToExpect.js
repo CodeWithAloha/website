@@ -3,16 +3,17 @@ import React from 'react'
 
 const TextBlock =({src, title, text}) => {
     return (
-      
-        <div className=" flex-1 h-12 flex items-center flex-col ">
-          <img src={src} className="h-12" />
-          <h5 className="font-extrabold py-8 text-transparent text-3xl 
-          font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400">{title}</h5>
-          <p className="font-semibold text-xl">
-           {text}
-          </p>
-        </div>
-    )
+      <div className=" flex-1 h-12 flex items-center flex-col ">
+        <img src={src} className="h-12" />
+        <h5
+          className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
+          font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
+        >
+          {title}
+        </h5>
+        <p className="text-md xl:text-xl">{text}</p>
+      </div>
+    );
 }
 
 const WhatToExpect = () => {

@@ -6,14 +6,20 @@ import TimelineIcon from "./TimelineIcon";
 const Details = ({ src, date, title, text }) => {
   const ref=useRef(null)
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-row items-start justify-between">
+    <li
+      ref={ref}
+      className="py-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-row items-start justify-between"
+    >
       <div className=" flex flex-row items-start justify-center">
-        
         <TimelineIcon reference={ref} />
-        <div >
-          <h3 className="font-semibold pb-6 text-left text-xl text-orange-400">{date}</h3>
+        <div>
+          <h3 className="font-semibold pb-6 text-left text-md xl:text-xl text-orange-400">
+            {date}
+          </h3>
           <h4 className="capitalize font-bold text-2xl text-left">{title}</h4>
-          <p className="font-medium w-full pt-4 text-xl text-left">{text}</p>
+          <p className="font-medium w-full pt-4 text-md xl:text-xl text-left">
+            {text}
+          </p>
         </div>
       </div>
     </li>
@@ -30,24 +36,22 @@ const Timeline = () => {
   
 const scaleY = useSpring(scrollYProgress);
   return (
-    <section className=" min-h-screen  py-60 bg-gradient-to-tr from-cyan-200 to bg-white-200">
-      <div className="  bg-white/20 md:w-2/3 w-full mx-auto p-50 text-center md:rounded-lg shadow-xl xl:w-1/2">
+    <section className=" min-h-screen  lg:py-60 bg-gradient-to-tr from-cyan-200 to bg-white-200">
+      <div className="  bg-white/20 md:w-2/3 w-full mx-auto  text-center md:rounded-lg shadow-xl xl:w-1/2">
         <h2
-          className=" xl:text-8xl pt-20  text-center text-transparent text-7xl bg-clip-text 
+          className=" xl:text-8xl pt-20  text-center text-transparent text-5xl bg-clip-text 
         bg-gradient-to-r from-yellow-400 to-red-600"
         >
           Our timeline
         </h2>
-        <p className="text-xl font-thin pt-4 text-center pb-20">
+        <p className="text-md xl:text-xl font-thin pt-4 text-center pb-20">
           A brief history of Code with Aloha
         </p>
 
         <div ref={ref} className="relative w-full  ">
-
-
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-20 top-3 w-1 h-[83%]  origin-top 
+            className="absolute left-10 xl:left-20 top-10 w-1 h-[81%]  origin-top 
             bg-gradient-to-b from-yellow-400 to-orange-600"
           />
 
@@ -101,7 +105,6 @@ const scaleY = useSpring(scrollYProgress);
           </ul>
         </div>
       </div>
-      
     </section>
   );
 };
