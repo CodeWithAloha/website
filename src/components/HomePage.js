@@ -8,14 +8,11 @@ const HomePage = () => {
       <NavBar />
       <div className="max-h-full flex items-center justify-center flex-col lg:flex-row">
         <div className="scale-[80%]  2xl:scale-90 xl:pl-20">
-          <img
-            src="master.png"
-            className="w-full max-w-[900px] "
-          />
+          <img src="master.png" className="w-full max-w-[900px] " />
         </div>
 
         <div
-          className="flex flex-col text-right justify-center items-center lg:items-start lg:scale-[80%]
+          className="flex flex-col text-right justify-center items-center lg:items-start scale-[80%]
          2xl:scale-100  px-4  xl:pl-20 "
         >
           <h4
@@ -27,14 +24,18 @@ const HomePage = () => {
           <h2 className="font-montserat lg:text-4xl text-xl font-semibold py-6 whitespace-nowrap">
             Hawaiʻi Civic Tech
           </h2>
-          <h3 className="text-sm lg:text-lg xl:text-xl pb-5 lg:font-semibold  lg:text-left text-center ">
+          <h3 className="text-[0.75rem] md:text-md lg:text-lg xl:text-xl pb-5 lg:font-semibold  lg:text-left text-center ">
             We are a civic-minded volunteers team, interested in using
             technology <br />
             and open data to make our local communities better.
           </h3>
 
-          <h4 className="text-md xl:text-xl">Please feel free to join us! </h4>
-          <p className="text-md xl:text-xl">No coding experience required</p>
+          <h4 className="text-[0.75rem] md:text-md xl:text-xl">
+            Please feel free to join us!{" "}
+          </h4>
+          <p className="text-[0.75rem] md:text-md xl:text-xl">
+            No coding experience required
+          </p>
 
           <div
             className="flex justify-center items-center  max-w-md rounded-full px-7 my-6 shadow-lg 

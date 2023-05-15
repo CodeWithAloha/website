@@ -24,7 +24,7 @@ const Team = () => {
         You can join any
         <a
           href="#join"
-          className="text-cyan-400 hover:text-orange-500 hover:underline underline-offset-4 px-2"
+          className="text-orange-500 hover:text-cyan-400 hover:underline underline-offset-4 px-2"
         >
           MeetUp
         </a>{" "}
