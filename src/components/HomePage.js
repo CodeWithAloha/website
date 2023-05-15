@@ -7,7 +7,7 @@ const HomePage = () => {
     <section className="h-screen overflow-x-hidden bg-gradient-to-tr from-cyan-200 to bg-white">
       <NavBar />
       <div className="max-h-full flex items-center justify-center flex-col lg:flex-row">
-        <div className="scale-[80%]  2xl:scale-100 xl:pl-20">
+        <div className="scale-[80%]  2xl:scale-90 xl:pl-20">
           <img
             src="master.png"
             className="w-full max-w-[900px] "
