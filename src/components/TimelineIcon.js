@@ -6,19 +6,19 @@ const TimelineIcon = ({reference}) => {
 
     const { scrollYProgress } = useScroll({
       target: reference,
-      offset: ["center end", "center center"],
+      offset: ["start end", "center start"],
     }); 
 
 
   return (
-    <figure className="absolute left-1 xl:left-11 stroke-black ">
+    <figure className="absolute left-1 xl:left-11 stroke-red-400 ">
       <svg width="75" height="75" viewBox="0 0 100 100"
       className='-rotate-90'>
         <circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-orange-400 stroke-1 fill-none"
+          className="stroke-yellow-300 stroke-1 fill-none"
         />
         <motion.circle
           cx="75"
