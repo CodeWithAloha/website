@@ -11,23 +11,22 @@ const TimelineIcon = ({reference}) => {
 
 
   return (
-    <figure className="absolute left-1 xl:left-11 stroke-red-400 ">
-      <svg width="75" height="75" viewBox="0 0 100 100"
-      className='-rotate-90'>
+    <figure className="absolute left-1 xl:left-11 stroke-black ">
+      <svg width="75" height="75" viewBox="0 0 100 100" className="-rotate-90">
         <circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-yellow-300 stroke-1 fill-none"
+          className="stroke-yellow-300 stroke-[3px] fill-none"
         />
         <motion.circle
           cx="75"
           cy="50"
           r="20"
           className=" stroke-[3px] fill-none"
-          style={{pathLength : scrollYProgress}}
+          style={{ pathLength: scrollYProgress }}
         />
-        
+
         <circle
           cx="75"
           cy="50"

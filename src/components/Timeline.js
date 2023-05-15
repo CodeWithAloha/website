@@ -52,7 +52,7 @@ const scaleY = useSpring(scrollYProgress);
           <motion.div
             style={{ scaleY: scrollYProgress }}
             className="absolute left-10 xl:left-20 top-10 w-1 h-[81%]  origin-top 
-            bg-gradient-to-b from-yellow-400 to-orange-600"
+            bg-gradient-to-b from-yellow-200 to-orange-500 animate-pulse"
           />
 
           <ul className="w-full flex flex-col items-start justify-between pb-[120px]">
