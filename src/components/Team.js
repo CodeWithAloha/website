@@ -20,7 +20,7 @@ const Team = () => {
       <h4 className=" text-4xl lg:text-5xl font-semibold font-satisfy w-full text-center xl:pt-20 mt-20 mb-8 ">
         Be part of our story
       </h4>
-      <p className="text-md xl:text-xl py-4 lg:px-12 text-center  xl:w-1/2">
+      <p className="text-sm xl:text-xl py-4 lg:px-12 text-center  xl:w-1/2">
         You can join any
         <a
           href="#join"
