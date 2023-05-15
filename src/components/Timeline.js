@@ -31,7 +31,7 @@ const Timeline = () => {
   
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["start start", "center start"],
   });
   
 const scaleY = useSpring(scrollYProgress);

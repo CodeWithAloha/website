@@ -27,7 +27,7 @@ const HomePage = () => {
           <h2 className="font-montserat lg:text-4xl text-xl font-semibold py-6 whitespace-nowrap">
             Hawaiʻi Civic Tech
           </h2>
-          <h3 className="xl:text-xl pb-5 lg:font-semibold  lg:text-left text-center ">
+          <h3 className="text-sm lg:text-lg xl:text-xl pb-5 lg:font-semibold  lg:text-left text-center ">
             We are a civic-minded volunteers team, interested in using
             technology <br />
             and open data to make our local communities better.
