@@ -13,9 +13,9 @@ const Footer = () => {
 
       <div className="flex flex-row items-center justify-center py-2">
         <AiOutlineMail fontSize="2rem" />
-          <span className="text-md xl:text-xl  px-2">
-            info@codeforhawaii.org
-          </span>{" "}
+        <span className="text-md xl:text-xl  px-2">
+          info@codeforhawaii.org
+        </span>{" "}
       </div>
 
       <div className="flex items-center justify-center gap-10  px-20 py-2 text-xl text-center">
@@ -34,13 +34,13 @@ const Footer = () => {
           <FaMeetup fontSize={46} />
         </a>
       </div>
-      <div className="flex flex-col items-center gap-2 
-      justify-center text-sm xl:text-xl pt-6  ">
-        <p>Privacy Policy</p>
-
-        <Link href="/terms-of-use">
-         Terms of Use
-        </Link>
+      <div
+        className="flex flex-col items-center gap-2 
+      justify-center text-sm xl:text-xl pt-6  "
+      >
+       
+        <Link href="/privacy-policy">Privacy Policy</Link>
+        <Link href="/terms-of-use">Terms of Use</Link>
       </div>
       <p className="text-sm xl:text-xl font-semibold text-center py-4">
         Copyright © Code With Aloha 2023
