@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoMdArrowBack } from "react-icons/io";
 import { TextBlock } from "./terms-of-use";
 
-const TermsOfUse = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <section
@@ -66,4 +66,4 @@ const TermsOfUse = () => {
   );
 };
 
-export default TermsOfUse;
+export default PrivacyPolicy;
