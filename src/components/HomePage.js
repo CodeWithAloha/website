@@ -9,7 +9,8 @@ const HomePage = () => {
       <div className="max-h-full flex items-center justify-center flex-col lg:flex-row">
         <div className="scale-[80%]  2xl:scale-90 xl:pl-20 flex flex-col items-center">
           <img src="hero-image.png" className="w-full max-w-[900px] animate-float" />
-          <div className='w-1/3 h-4 mt-12 rounded-full blur-2xl bg-gradient-to-t bg-black'></div>
+          {/* shadow under hero image */}
+          {/* <div className='w-[20%] h-3 mt-2 rounded-full blur-2xl bg-gradient-to-t bg-black'></div> */}
         </div>
 
         <div

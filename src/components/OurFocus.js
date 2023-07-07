@@ -19,7 +19,7 @@ const TextBlock = ({ src, alt, title, text, className = "" }) => {
 const OurFocus = () => {
   return (
     <>
-      <div className="  bg-white/20 text-center rounded-lg shadow-xl pt-10 pb-20">
+      <div className="  bg-white/80 text-center rounded-lg shadow-xl pt-10 pb-20">
         <h2
           className=" xl:text-7xl py-8   text-center text-transparent  text-4xl  bg-clip-text 
           bg-gradient-to-r from-yellow-400 to-red-600"

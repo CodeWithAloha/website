@@ -37,7 +37,7 @@ const Timeline = () => {
 const scaleY = useSpring(scrollYProgress);
   return (
     <section className=" min-h-screen  lg:py-60 bg-gradient-to-tr from-cyan-200 to bg-white-200">
-      <div className="  bg-white/20 md:w-2/3 w-full mx-auto  text-center md:rounded-lg shadow-xl xl:w-1/2">
+      <div className="  bg-white/80 md:w-2/3 w-full mx-auto  text-center md:rounded-lg shadow-xl xl:w-1/2">
         <h2
           className=" xl:text-8xl pt-20  text-center text-transparent text-5xl bg-clip-text 
         bg-gradient-to-r from-yellow-400 to-red-600"
