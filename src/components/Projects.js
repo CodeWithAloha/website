@@ -34,7 +34,7 @@ export const ProjectCard = ({
         <img
           src={src}
           alt={title}
-          className={`${className}  w-2/3 rounded-sm`}
+          className={`${className}  w-2/3 rounded-sm hover:scale-105 transition-all ease-in-out cursor-pointer`}
         />
         <h5 className="font-semibold text-3xl py-6">{title} </h5>
         <p className=" w-3/5  text-md xl:text-xl">{text}</p>
