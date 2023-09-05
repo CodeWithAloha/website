@@ -50,7 +50,7 @@ const Projects = () => {
 
       <p className="text-md xl:text-xl  py-4 text-center w-2/3 pb-20">
         Here are some projects we are currently working on. Click on a project
-        for details. If you have an idea for a civic project email us and let's
+        for details. If you have an idea for a civic project email us and let&apos;s
         make it happen!
       </p>
 
