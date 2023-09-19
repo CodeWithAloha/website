@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Image from 'next/image'
 
 const TextBlock =({src, title, text}) => {
     return (
       <div className=" flex-1 h-12 flex items-center flex-col ">
-        <img src={src} className="h-12" />
+        <Image alt='Decorational images representing the Meet & Greet, Debrief on Projects and Announcements, and Participation in breakout rooms' src={src} className="h-12" />
         <h5
           className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
           font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
