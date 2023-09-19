@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from 'next/image'
 import HistoricalProjects from "./HistoricalProjects";
 import Clients from "./Clients";
 
@@ -10,7 +11,7 @@ export const ProjectCard = ({ src, title, text, className = "" , handleClick}) =
      "
       onClick={handleClick}
     >
-      <img src={src} className={`${className}  w-2/3 rounded-lg`} />
+      <Image alt='List of projects including Hawaii Zoning Atlas, Habitat for Humanity, and Hierr (Hawaii Economic Recovery & Resilience )' src={src} className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
@@ -40,7 +41,8 @@ const Projects = () => {
         ></div>
       ) : null}
 
-      <img
+      <Image
+        alt="A picture of a folder"
         src="./assets/projectsAssets/projects.png"
         className="lg:h-40 h-24 mt-20"
       />
