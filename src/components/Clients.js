@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+
 
 const Clients = () => {
   return (
@@ -9,11 +11,13 @@ const Clients = () => {
       </h2>
 
       <div className="flex items-center justify-center pb-40">
-        <img
+        <Image
+          alt='This is a client logo for The Hawaii Zoning Atlus'
           src="./assets/projectsAssets/client1.png"
           className="h-full  w-1/3 lg:w-1/4 "
         />
-        <img
+        <Image
+          alt='This is a client logo for The Civil Beat - Law Center For Public Interest'
           src="./assets/projectsAssets/client2.png"
           className="h-full w-1/3 lg:w-1/4 "
         />
