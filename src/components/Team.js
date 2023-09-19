@@ -36,14 +36,6 @@ const Team = () => {
         <h2 className='pl-2 text-md xl:text-xl'>Email:</h2>{" "}
       </div>
       <h2 className='text-md xl:text-xl px-2'>codewithaloha@gmail.com</h2>{" "}
-      <div className='container flex flex-col items-center justify-center  mx-auto pt-10 pb-20'>
-        <div className='flex flex-row flex-wrap justify-center '>
-          <TeamMember src='./assets/TreyGordner.jpeg/' name='Trey Gordner' />
-          <TeamMember src='./assets/TylerChong.jpeg/' name='Tyler Chong' />
-          <TeamMember src='./assets/MikeAvendano.jpeg/' name='Mike Avendano' />
-          <TeamMember src='./assets/KurtMalley.jpeg/' name='Kurt Malley' />
-        </div>
-      </div>
     </>
   );
 };
