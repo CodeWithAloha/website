@@ -31,16 +31,17 @@ const OurFocus = () => {
           src="./assets/meet.png"
           alt="meet illustration"
           title="Meet new people"
-          text="Meet supportive people like you who care. If you are passionate
-              about helping others, Code With Aloha is perfect to support you."
+          text="Build with, not for. We are a community of people who are passionate
+          about helping others. We are here to support each other and
+          build together."
         />
 
         <TextBlock
           src="./assets/progress.png"
           alt="make an impact illustration"
           title="Make a Difference"
-          text="Make a difference contributing to Hawaiian social impact projects.
-              Leverage technology to help organizations solve problems."
+          text="Nobody is coming to save us. It's up to us to impact our community and drive change.
+          We are the ones we've been waiting for. We are the change that we seek."
           className="xl:flex-row-reverse"
         />
 
