@@ -100,7 +100,7 @@ const scaleY = useSpring(scrollYProgress);
               src="./assets/timeline-7.png"
               date="June 2023"
               title="Code for America Brigade Cancellation"
-              text="Code for America cancels the local brigades program. Code for Hawaii rebrands as Code With Aloha."
+              text="Code for America cancels the local brigades program. Code for Hawaii rebrands as Code With Aloha and joins many other previous brigades in the Alliance of Civic Technologists."
             />
           </ul>
         </div>
