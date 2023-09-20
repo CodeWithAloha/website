@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from 'next/image'
 import HistoricalProjects from "./HistoricalProjects";
 import Clients from "./Clients";
+import { headers } from "next/dist/client/components/headers";
 
 
 export const ProjectCard = ({ src, title, text, className = "" , handleClick}) => {
@@ -11,7 +12,7 @@ export const ProjectCard = ({ src, title, text, className = "" , handleClick}) =
      "
       onClick={handleClick}
     >
-      <Image src={src} alt={alt} className={`${className}  w-2/3 rounded-lg`} />
+      <Image src={src} alt={alt} width={width} height={height} className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
@@ -44,6 +45,8 @@ const Projects = () => {
       <Image
         alt=""
         src="./assets/projectsAssets/projects.png"
+        width='500'
+        headers='500'
         className="lg:h-40 h-24 mt-20"
       />
       <h2 className="text-4xl xl:text-7xl drop-shadow-xl text-center">
@@ -60,6 +63,8 @@ const Projects = () => {
         <ProjectCard
           src="./assets/projectsAssets/HawaiiZoningAtlas.png"
           alt="hawaii zoning atlas illustration"
+          width='1325'
+          height='985'
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
             difficult to build diverse, affordable housing."
@@ -68,6 +73,8 @@ const Projects = () => {
         <ProjectCard
           src="./assets/projectsAssets/habitat-full.jpg"
           alt="habitat for humanity illustration"
+          width='1080'
+          height='1080'
           title="Habitat for Humanity"
           text=" A nonprofit organization that helps people
             in your community and around the world build or improve a place they
@@ -78,6 +85,8 @@ const Projects = () => {
         <ProjectCard
           src="./assets/projectsAssets/HIERR.png"
           alt="HIERR illustration"
+          width='1126'
+          height='873'
           title="HIERR"
           text="The HIERR Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."

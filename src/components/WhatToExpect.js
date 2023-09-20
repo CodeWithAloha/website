@@ -4,7 +4,7 @@ import Image from 'next/image'
 const TextBlock =({src, title, text}) => {
     return (
       <div className=" flex-1 h-12 flex items-center flex-col ">
-        <Image alt='' src={src} className="h-12" />
+        <Image alt='' src={src} width={width} height={height} className="h-12" />
         <h5
           className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
           font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
@@ -29,6 +29,8 @@ const WhatToExpect = () => {
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40">
         <TextBlock
           src="./assets/one.png"
+          width='500'
+          height='500'
           title="Meet & Greet"
           text="We start each meeting with a land acknowledgement, Code for
             Americaʻs Code of Conduct, and a full round of introductions
@@ -38,6 +40,8 @@ const WhatToExpect = () => {
 
         <TextBlock
           src="./assets/two.png"
+          width='500'
+          height='500'
           title="Debrief on projects and announcements"
           text="  We will share key milestones, updates, and blockers on projects as
             well as relevant news from Code for America including participating
@@ -49,6 +53,8 @@ const WhatToExpect = () => {
 
         <TextBlock
           src="./assets/three.png"
+          width='500'
+          height='500'
           title="Participate in breakout rooms"
           text="Each month the brigade selects a Focus Project that we all work on
             together as a brigade. We also work on developing several other

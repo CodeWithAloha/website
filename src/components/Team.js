@@ -7,6 +7,9 @@ const TeamMember = ({ src, name }) => {
     <div className='flex flex-col justify-center m-8 text-center hover:scale-105'>
       <Image
         alt=''
+        width={width}
+        height={height}
+
         className='self-center  flex-shrink-0 w-32 h-32 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500'
         src={src}
       />
@@ -39,10 +42,10 @@ const Team = () => {
       <h2 className='text-md xl:text-xl px-2'>codewithaloha@gmail.com</h2>{" "}
       <div className='container flex flex-col items-center justify-center  mx-auto pt-10 pb-20'>
         <div className='flex flex-row flex-wrap justify-center '>
-          <TeamMember src='./assets/TreyGordner.jpeg/' name='Trey Gordner' />
-          <TeamMember src='./assets/TylerChong.jpeg/' name='Tyler Chong' />
-          <TeamMember src='./assets/MikeAvendano.jpeg/' name='Mike Avendano' />
-          <TeamMember src='./assets/KurtMalley.jpeg/' name='Kurt Malley' />
+          <TeamMember width='450' height='450' src='./assets/TreyGordner.jpeg/' name='Trey Gordner' />
+          <TeamMember width='460' height='460' src='./assets/TylerChong.jpeg/' name='Tyler Chong' />
+          <TeamMember width='517' height='517' src='./assets/MikeAvendano.jpeg/' name='Mike Avendano' />
+          <TeamMember width='200' height='200' src='./assets/KurtMalley.jpeg/' name='Kurt Malley' />
         </div>
       </div>
     </>

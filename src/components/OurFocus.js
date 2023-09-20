@@ -6,7 +6,7 @@ const TextBlock = ({ src, alt, title, text, className = "" }) => {
     <div
       className={`flex items-center justify-between gap-10 px-4 lg:px-10 flex-col xl:flex-row ${className}`}
     >
-      <Image src={src} alt={alt} className="h-100 xl:p-10 pt-20" />
+      <Image src={src} alt={alt} width={width} height={height} className="h-100 xl:p-10 pt-20" />
       <div className="max-w-lg">
         <h4 className="xl:text-5xl text-3xl font-semibold mb-10 text-center font-satisfy">
           {title}
@@ -31,6 +31,8 @@ const OurFocus = () => {
         <TextBlock
           src="./assets/meet.png"
           alt="meet illustration"
+          width='500'
+          height='283'
           title="Meet new people"
           text="Meet supportive people like you who care. If you are passionate
               about helping others, Code With Aloha is perfect to support you."
@@ -39,6 +41,8 @@ const OurFocus = () => {
         <TextBlock
           src="./assets/progress.png"
           alt="make an impact illustration"
+          width='500'
+          height='266'
           title="Make a Difference"
           text="Make a difference contributing to Hawaiian social impact projects.
               Leverage technology to help organizations solve problems."
@@ -48,6 +52,8 @@ const OurFocus = () => {
         <TextBlock
           src="./assets/experience.png"
           alt="gain experience illustration"
+          width='500'
+          height='215'
           title="Gain Experience"
           text="Gain experience as a beginner, pay it forward as a mentor. We help
               each other grow and together we make a difference in our

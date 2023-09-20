@@ -14,11 +14,15 @@ const Clients = () => {
         <Image
           alt='Hawaii Zoning Atlus'
           src="./assets/projectsAssets/client1.png"
+          width='500'
+          height='500'
           className="h-full  w-1/3 lg:w-1/4 "
         />
         <Image
           alt='The Civil Beat - Law Center For Public Interest'
           src="./assets/projectsAssets/client2.png"
+          width='500'
+          height='500'
           className="h-full w-1/3 lg:w-1/4 "
         />
       </div>
