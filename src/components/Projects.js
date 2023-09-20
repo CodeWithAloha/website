@@ -12,7 +12,7 @@ export const ProjectCard = ({ src, title, text, className = "" , handleClick}) =
      "
       onClick={handleClick}
     >
-      <Image src={src} alt ='' className={`${className}  w-2/3 rounded-lg`} />
+      <Image fill src={src} alt ='' className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
@@ -44,9 +44,9 @@ const Projects = () => {
 
       <Image
         alt=""
-        src="./assets/projectsAssets/projects.png"
+        src="/./assets/projectsAssets/projects.png"
         width='500'
-        headers='500'
+        height='500'
         className="lg:h-40 h-24 mt-20"
       />
       <h2 className="text-4xl xl:text-7xl drop-shadow-xl text-center">
@@ -61,7 +61,7 @@ const Projects = () => {
 
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
         <ProjectCard
-          src="./assets/projectsAssets/HawaiiZoningAtlas.png"
+          src="/./assets/projectsAssets/HawaiiZoningAtlas.png"
           alt="hawaii zoning atlas illustration"
           width='1325'
           height='985'
@@ -71,7 +71,7 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="./assets/projectsAssets/habitat-full.jpg"
+          src="/./assets/projectsAssets/habitat-full.jpg"
           alt="habitat for humanity illustration"
           width='1080'
           height='1080'
@@ -83,7 +83,7 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="./assets/projectsAssets/HIERR.png"
+          src="/./assets/projectsAssets/HIERR.png"
           alt="HIERR illustration"
           width='1126'
           height='873'

@@ -10,13 +10,13 @@ const HistoricalProjects = () => {
       </h2>
       <div className=" flex gap-10 flex-col xl:flex-row ">
         <ProjectCard
-          src="./assets/projectsAssets/foodoasis.jpg"
+          // src="./assets/projectsAssets/foodoasis.jpg"
           title="FOOD OASIS"
           text="Resource for Community Food Help"
         />
 
         <ProjectCard
-          src="./assets/projectsAssets/uipa.jpg"
+          src="/./assets/projectsAssets/uipa.jpg"
           title="UIPA.ORG"
           text="Publishes public records and request"
           className="max-h-1/2"

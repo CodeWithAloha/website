@@ -10,7 +10,7 @@ const Logo = () => {
       <Link href="/" whileHover={{ scale: 1.5 }}>
         <Image
           alt='Code with Aloha logo'
-          src="../logo.png"
+          src="/../logo.png"
           width='500'
           height='500'
           className="xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"

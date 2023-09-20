@@ -4,7 +4,7 @@ import Image from 'next/image'
 const TextBlock =({src, title, text}) => {
     return (
       <div className=" flex-1 h-12 flex items-center flex-col ">
-        <Image alt='' src={src} className="h-12" />
+        <Image fill alt='' src={src} className="h-12" />
         <h5
           className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
           font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
@@ -28,7 +28,7 @@ const WhatToExpect = () => {
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40">
         <TextBlock
-          src="./assets/one.png"
+          src="/./assets/one.png"
           width='500'
           height='500'
           title="Meet & Greet"
@@ -39,7 +39,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="./assets/two.png"
+          src="/./assets/two.png"
           width='500'
           height='500'
           title="Debrief on projects and announcements"
@@ -52,7 +52,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="./assets/three.png"
+          src="/./assets/three.png"
           width='500'
           height='500'
           title="Participate in breakout rooms"
