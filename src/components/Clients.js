@@ -12,12 +12,12 @@ const Clients = () => {
 
       <div className="flex items-center justify-center pb-40">
         <Image
-          alt='This is a client logo for The Hawaii Zoning Atlus'
+          alt='Hawaii Zoning Atlus'
           src="./assets/projectsAssets/client1.png"
           className="h-full  w-1/3 lg:w-1/4 "
         />
         <Image
-          alt='This is a client logo for The Civil Beat - Law Center For Public Interest'
+          alt='The Civil Beat - Law Center For Public Interest'
           src="./assets/projectsAssets/client2.png"
           className="h-full w-1/3 lg:w-1/4 "
         />

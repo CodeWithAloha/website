@@ -11,7 +11,7 @@ export const ProjectCard = ({ src, title, text, className = "" , handleClick}) =
      "
       onClick={handleClick}
     >
-      <Image alt='List of projects including Hawaii Zoning Atlas, Habitat for Humanity, and Hierr (Hawaii Economic Recovery & Resilience )' src={src} className={`${className}  w-2/3 rounded-lg`} />
+      <Image src={src} alt={alt} className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
@@ -42,7 +42,7 @@ const Projects = () => {
       ) : null}
 
       <Image
-        alt="A picture of a folder"
+        alt=""
         src="./assets/projectsAssets/projects.png"
         className="lg:h-40 h-24 mt-20"
       />
@@ -59,6 +59,7 @@ const Projects = () => {
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
         <ProjectCard
           src="./assets/projectsAssets/HawaiiZoningAtlas.png"
+          alt="hawaii zoning atlas illustration"
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
             difficult to build diverse, affordable housing."
@@ -66,6 +67,7 @@ const Projects = () => {
 
         <ProjectCard
           src="./assets/projectsAssets/habitat-full.jpg"
+          alt="habitat for humanity illustration"
           title="Habitat for Humanity"
           text=" A nonprofit organization that helps people
             in your community and around the world build or improve a place they
@@ -75,6 +77,7 @@ const Projects = () => {
 
         <ProjectCard
           src="./assets/projectsAssets/HIERR.png"
+          alt="HIERR illustration"
           title="HIERR"
           text="The HIERR Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."
