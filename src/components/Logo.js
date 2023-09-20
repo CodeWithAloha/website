@@ -9,7 +9,7 @@ const Logo = () => {
     
       <Link href="/" whileHover={{ scale: 1.5 }}>
         <Image
-          alt='This is a logo of Code with Aloha represented by the name, as well as an orange lightbulb with the torch like yellow flame akin to a sunset scene.'
+          alt='Code with Aloha'
           src="../logo.png"
           className="xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"
         />
