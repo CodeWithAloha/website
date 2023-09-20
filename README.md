@@ -38,7 +38,7 @@ An intuitive section that welcomes potential volunteers. Here, they'll find dire
 To run this project locally:
 
 1. Clone the repository: `git clone https://github.com/CodeWithAloha/CWAWebsite.git`
-2. Navigate to the project directory: `cd code-with-aloha`
+2. Navigate to the project directory: `cd CWAWebsite`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
