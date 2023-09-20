@@ -6,7 +6,7 @@ const TextBlock = ({ src, alt, title, text, className = "" }) => {
     <div
       className={`flex items-center justify-between gap-10 px-4 lg:px-10 flex-col xl:flex-row ${className}`}
     >
-      <Image src={src} alt={alt} width={width} height={height} className="h-100 xl:p-10 pt-20" />
+      <Image src={src} alt='' className="h-100 xl:p-10 pt-20" />
       <div className="max-w-lg">
         <h4 className="xl:text-5xl text-3xl font-semibold mb-10 text-center font-satisfy">
           {title}

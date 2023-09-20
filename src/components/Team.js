@@ -7,9 +7,6 @@ const TeamMember = ({ src, name }) => {
     <div className='flex flex-col justify-center m-8 text-center hover:scale-105'>
       <Image
         alt=''
-        width={width}
-        height={height}
-
         className='self-center  flex-shrink-0 w-32 h-32 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500'
         src={src}
       />

@@ -12,7 +12,7 @@ export const ProjectCard = ({ src, title, text, className = "" , handleClick}) =
      "
       onClick={handleClick}
     >
-      <Image src={src} alt={alt} width={width} height={height} className={`${className}  w-2/3 rounded-lg`} />
+      <Image src={src} alt ='' className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
