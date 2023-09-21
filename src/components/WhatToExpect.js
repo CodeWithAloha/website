@@ -26,7 +26,7 @@ const WhatToExpect = () => {
         What to expect at a meeting{" "}
       </h4>
 
-      <div className="flex gap-10 flex-col xl:flex-row lg:pb-40">
+      <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         <TextBlock
           src="/./assets/one.png"
           width='500'
@@ -63,7 +63,6 @@ const WhatToExpect = () => {
             milestones on the Focus Project or explore projects in our
             Discovery Track."
         />
-
       
       </div>
       
