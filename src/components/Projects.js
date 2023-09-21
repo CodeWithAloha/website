@@ -46,7 +46,7 @@ const Projects = () => {
         alt=""
         width='500'
         height='500'
-        className="lg:h-40 h-24 mt-20"
+        className="lg:h-40 lg:w-40 h-24 mt-20"
       />
       <h2 className="text-4xl xl:text-7xl drop-shadow-xl text-center">
         Active projects
