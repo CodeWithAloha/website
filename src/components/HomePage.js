@@ -5,7 +5,8 @@ import NavBar from './NavBar';
 
 const HomePage = () => {
   return (
-    <section className="h-screen overflow-x-hidden bg-gradient-to-tr from-cyan-200 to bg-white">
+    <section className="h-screen overflow-x-hidden overflow-y-hidden bg-gradient-to-tr from-cyan-200 to bg-white">
+
       <NavBar />
       <div className="max-h-full flex items-center justify-center flex-col lg:flex-row">
         <div className="scale-[80%]  2xl:scale-90 xl:pl-20 flex flex-col items-center">

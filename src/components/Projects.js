@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import Image from 'next/image'
 import HistoricalProjects from "./HistoricalProjects";
 import Clients from "./Clients";
-import { headers } from "next/dist/client/components/headers";
 
 
-export const ProjectCard = ({ src, title, text, className = "" , handleClick}) => {
+export const ProjectCard = ({ src, alt, width, height, title, text, className = "" , handleClick}) => {
   return (
     <div
       className="relative flex-1 flex items-center  pb-8 flex-col text-center rounded-xl 
      "
       onClick={handleClick}
     >
-      <Image fill src={src} alt ='' className={`${className}  w-2/3 rounded-lg`} />
+      <Image src={src} alt={alt} width={width} height={height} className={`${className}  w-2/3 rounded-lg`} />
       <h5 className="font-semibold text-3xl py-6">{title} </h5>
       <p className=" w-3/5  text-md xl:text-xl">{text}</p>
     </div>
@@ -43,8 +42,8 @@ const Projects = () => {
       ) : null}
 
       <Image
-        alt=""
         src="/./assets/projectsAssets/projects.png"
+        alt=""
         width='500'
         height='500'
         className="lg:h-40 h-24 mt-20"
