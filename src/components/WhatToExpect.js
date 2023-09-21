@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const TextBlock =({src, alt, width, height, title, text}) => {
+const TextBlock =({src, width, height, title, text}) => {
     return (
       <div className=" flex-1 h-12 flex items-center flex-col ">
         <Image src={src} alt='' width={width} height={height} className="h-12" />
