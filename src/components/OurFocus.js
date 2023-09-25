@@ -31,8 +31,8 @@ const OurFocus = () => {
         <TextBlock
           src="/./assets/meet.png"
           alt="meet illustration"
-          width='500'
-          height='283'
+          width={500}
+          height={283}
           title="Meet new people"
           text="Build with, not for. We are a community of people who are passionate
           about helping others. We are here to support each other and
@@ -42,8 +42,8 @@ const OurFocus = () => {
         <TextBlock
           src="/./assets/progress.png"
           alt="make an impact illustration"
-          width='500'
-          height='266'
+          width={500}
+          height={266}
           title="Make a Difference"
           text="Nobody is coming to save us. It's up to us to impact our community and drive change.
           We are the ones we've been waiting for. We are the change that we seek."
@@ -53,8 +53,8 @@ const OurFocus = () => {
         <TextBlock
           src="/./assets/experience.png"
           alt="gain experience illustration"
-          width='500'
-          height='215'
+          width={500}
+          height={215}
           title="Gain Experience"
           text="Gain experience as a beginner, pay it forward as a mentor. We help
               each other grow and together we make a difference in our

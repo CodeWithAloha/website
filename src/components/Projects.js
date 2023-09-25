@@ -44,8 +44,8 @@ const Projects = () => {
       <Image
         src="/./assets/projectsAssets/projects.png"
         alt=""
-        width='500'
-        height='500'
+        width={500}
+        height={500}
         className="lg:h-40 lg:w-40 h-24 mt-20"
       />
       <h2 className="text-4xl xl:text-7xl drop-shadow-xl text-center">
@@ -62,8 +62,8 @@ const Projects = () => {
         <ProjectCard
           src="/./assets/projectsAssets/HawaiiZoningAtlas.png"
           alt="hawaii zoning atlas illustration"
-          width='1325'
-          height='985'
+          width={1325}
+          height={985}
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
             difficult to build diverse, affordable housing."
@@ -84,8 +84,8 @@ const Projects = () => {
         <ProjectCard
           src="/./assets/projectsAssets/HIERR.png"
           alt="HIERR illustration"
-          width='1126'
-          height='873'
+          width={1126}
+          height={873}
           title="HIERR"
           text="The HIERR Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."

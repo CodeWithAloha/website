@@ -11,8 +11,8 @@ const Logo = () => {
         <Image
           alt='Code with Aloha logo'
           src="/../public/logo.png"
-          width='500'
-          height='500'
+          width={500}
+          height={500}
           className="w-full xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"
         />
       </Link>
