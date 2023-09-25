@@ -72,8 +72,8 @@ const Projects = () => {
         <ProjectCard
           src="/./assets/projectsAssets/habitat-full.jpg"
           alt="habitat for humanity illustration"
-          width='1080'
-          height='1080'
+          width={1080}
+          height={1080}
           title="Habitat for Humanity"
           text=" A nonprofit organization that helps people
             in your community and around the world build or improve a place they
