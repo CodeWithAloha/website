@@ -13,34 +13,27 @@ Please provide a brief description of the changes made in this PR for the "Code 
 -  [ ] **Updated documentation**
 
 # Checklist:
-<!-- 
+<! -- Please mark the line that applies with an x: [X] -->
 - [ ] I have tested my changes thorougly
 - [ ] I have linked the related issue (Ex: fixes #12, closes #123 in the PR description)
--->
+
 
 ## Related Issue:
-<!--
 Please link to any related issue or provide context for the changes.
--->
 
 ## Screenshots:
-<!-- 
 If your changes affect the UI or layout, please attach before-and-after screenshots.
--->
 
 ## How I Tested:
-<!-- 
-Please describe how you tested the changes (e.g., locally, on the live site, etc.).
--->
+ Please describe how you tested the changes (e.g., locally, on the live site, etc.).
 
 ## Notes:
-<!-- 
-Any additional information or context about the changes.
+ Any additional information or context about the changes.
 
 Thank you for contributing to the Code with Aloha Website! We appreciate your effort and dedication to improving the community through technology.
 
 Commit and push the changes
--->
+
 
 
 
