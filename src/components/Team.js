@@ -1,10 +1,11 @@
 import React from "react";
+import Image from 'next/image'
 import { AiOutlineMail } from "react-icons/ai";
 
 const TeamMember = ({ src, name }) => {
   return (
     <div className='flex flex-col justify-center m-8 text-center hover:scale-105'>
-      <img
+      <Image
         alt=''
         className='self-center  flex-shrink-0 w-32 h-32 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500'
         src={src}

@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
-
+import Link from 'next/link'
+import Image from 'next/image'
 
 
 
@@ -8,10 +8,13 @@ const Logo = () => {
   return (
     
       <Link href="/" whileHover={{ scale: 1.5 }}>
-        <img
-          src="../logo.png"
-          className="xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"
-        ></img>
+        <Image
+          alt='Code with Aloha logo'
+          src="/../public/logo.png"
+          width={500}
+          height={500}
+          className="w-full xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"
+        />
       </Link>
     
   );
