@@ -8,9 +8,10 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# next.js (exclude the .next/ directory itself but include its contents)
+/.next/*
+!/out/
+!/out/**/*
 
 # production
 /build
