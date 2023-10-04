@@ -13,13 +13,6 @@ export default function App({ Component, pageProps }) {
         ></meta>
         <link rel="icon" href="/favicon.ico" />
         <title>Code with Aloha</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat&family=Satisfy&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <Component {...pageProps} />
     </>

@@ -136,8 +136,8 @@ const Projects = () => {
 
       <p className="text-md xl:text-xl  py-4 text-center w-2/3 pb-20">
         Here are some projects we are currently working on. Click on a project
-        for details. If you have an idea for a civic project email us and let's
-        make it happen!
+        for details. If you have an idea for a civic project email us and
+        let&apos;s make it happen!
       </p>
 
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
@@ -149,7 +149,7 @@ const Projects = () => {
            difficult to build diverse, affordable housing."
           about="Building an online-interactive map to educate the public on zoning and 
            land use issues. Our vision is to connect researchers, educators, and advocates."
-          goals="The project's goals are to build an interactive online map to educate 
+          goals="The project&apos;s goals are to build an interactive online map to educate 
            the public on zoning and land use issues and generate talking points 
            for affordable housing advocates in Hawaii. Our second goal is to create 
            a website that serves as a hub for the resulting coalition of researchers, 
@@ -188,7 +188,7 @@ const Projects = () => {
           This planning process is designed to learn from the economic impacts and experiences of hardship associated 
           with the COVID-19 pandemic to inform and enable actions toward a more resilient, equitable, and sustainable economy."
           goals="The CFH project is focused on developing a digital engagement platform via Pol.is and 
-          onboarding materials to solicit resident sentiments on vision and value statements for Hawaii's 
+          onboarding materials to solicit resident sentiments on vision and value statements for Hawaii&apos;s 
           economic future. Residents will be invited to in-person workshops for onboarding and introduction 
           to the established Pol.is, where they will be invited to interact with seeded vision and value 
           statements as well as add new ones."
