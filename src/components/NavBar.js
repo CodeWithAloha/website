@@ -44,7 +44,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="t-0 w-full pt-5 px-10 flex justify-between items-center">
+    <header className="w-full pt-5 px-10 flex justify-between items-center">
       <Logo />
       <div className="lg:flex justify-between items-center hidden">
         <nav>
@@ -69,9 +69,8 @@ const NavBar = () => {
           ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}
         ></span>
         <span
-          className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
+          className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${isOpen ? "opacity-0" : "opacity-100"
+            }`}
         ></span>
         <span
           className={`bg-black block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
@@ -102,7 +101,7 @@ const NavBar = () => {
               title="Join us!"
               toggle={handleClick}
             />
-            
+
           </nav>
         </div>
       ) : null}

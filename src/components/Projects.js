@@ -3,10 +3,10 @@ import HistoricalProjects from "./HistoricalProjects";
 import Clients from "./Clients";
 
 
-export const ProjectCard = ({ src, title, text, className = "" , handleClick}) => {
+export const ProjectCard = ({ src, title, text, className = "", handleClick }) => {
   return (
     <div
-      className="relative flex-1 flex items-center  pb-8 flex-col text-center rounded-xl 
+      className="relative flex-1 flex items-center pb-8 flex-col text-center rounded-xl 
      "
       onClick={handleClick}
     >
@@ -22,6 +22,7 @@ const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
+    console.log('clicked')
     setIsOpen(!isOpen);
   };
 
@@ -37,7 +38,9 @@ const Projects = () => {
         <div
           className=" w-[90%] h-[90%] flex p-20  flex-col justify-between items-end fixed 
       top-0 right-0  z-30 bg-white/90 rounded-b-lg backdrop-blur-md "
-        ></div>
+        >
+          <button onClick={handleClick}>Close</button>
+        </div>
       ) : null}
 
       <img
@@ -60,6 +63,7 @@ const Projects = () => {
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
             difficult to build diverse, affordable housing."
+          handleClick={handleClick}
         />
 
         <ProjectCard
@@ -69,6 +73,7 @@ const Projects = () => {
             in your community and around the world build or improve a place they
             can call home."
           className="max-h-1/2"
+          handleClick={handleClick}
         />
 
         <ProjectCard
@@ -76,6 +81,7 @@ const Projects = () => {
           title="HIERR"
           text="The HIERR Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."
+          handleClick={handleClick}
         />
       </div>
       <HistoricalProjects />
