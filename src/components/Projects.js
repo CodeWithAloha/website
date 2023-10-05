@@ -124,7 +124,7 @@ const Projects = () => {
       className=" flex flex-col items-center xl:p-20 px-5 bg-gradient-to-br from-cyan-200 to bg-white-200"
     >
       <Image
-        src="/assets/projectsAssets/projects.png"
+        src="/CWAWebsite/assets/projectsAssets/projects.png"
         alt="Project icon"
         className="mt-20"
         width={50}
@@ -143,13 +143,13 @@ const Projects = () => {
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
         <ProjectCard
           id="hza"
-          src="/assets/projectsAssets/HawaiiZoningAtlas.png"
+          src="/CWAWebsite/assets/projectsAssets/HawaiiZoningAtlas.png"
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
            difficult to build diverse, affordable housing."
           about="Building an online-interactive map to educate the public on zoning and 
            land use issues. Our vision is to connect researchers, educators, and advocates."
-          goals="The project&apos;s goals are to build an interactive online map to educate 
+          goals="The project's goals are to build an interactive online map to educate 
            the public on zoning and land use issues and generate talking points 
            for affordable housing advocates in Hawaii. Our second goal is to create 
            a website that serves as a hub for the resulting coalition of researchers, 
@@ -161,7 +161,7 @@ const Projects = () => {
 
         <ProjectCard
           id="hfu"
-          src="/assets/projectsAssets/habitat-full.jpg"
+          src="/CWAWebsite/assets/projectsAssets/habitat-full.jpg"
           title="Habitat for Humanity"
           text=" A nonprofit organization that helps people
             in your community and around the world build or improve a place they
@@ -180,7 +180,7 @@ const Projects = () => {
 
         <ProjectCard
           id="hierr"
-          src="/assets/projectsAssets/HIERR.png"
+          src="/CWAWebsite/assets/projectsAssets/HIERR.png"
           title="HIERR"
           text="The HIERR (Hawaiʻi Economic Recovery & Resilience) Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."
@@ -188,7 +188,7 @@ const Projects = () => {
           This planning process is designed to learn from the economic impacts and experiences of hardship associated 
           with the COVID-19 pandemic to inform and enable actions toward a more resilient, equitable, and sustainable economy."
           goals="The CFH project is focused on developing a digital engagement platform via Pol.is and 
-          onboarding materials to solicit resident sentiments on vision and value statements for Hawaii&apos;s 
+          onboarding materials to solicit resident sentiments on vision and value statements for Hawaii's 
           economic future. Residents will be invited to in-person workshops for onboarding and introduction 
           to the established Pol.is, where they will be invited to interact with seeded vision and value 
           statements as well as add new ones."

@@ -28,7 +28,7 @@ const WhatToExpect = () => {
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         <TextBlock
-          src="/./assets/one.png"
+          src="/CWAWebsite/assets/one.png"
           width={500}
           height={500}
           title="Meet & Greet"
@@ -39,7 +39,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="/./assets/two.png"
+          src="/CWAWebsite/assets/two.png"
           width={500}
           height={500}
           title="Debrief on projects and announcements"
@@ -52,7 +52,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="/./assets/three.png"
+          src="/CWAWebsite/assets/three.png"
           width={500}
           height={500}
           title="Participate in breakout rooms"
@@ -63,9 +63,7 @@ const WhatToExpect = () => {
             milestones on the Focus Project or explore projects in our
             Discovery Track."
         />
-      
       </div>
-      
     </div>
   );
 }

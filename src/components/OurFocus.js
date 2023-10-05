@@ -29,7 +29,7 @@ const OurFocus = () => {
           Our focus{" "}
         </h2>
         <TextBlock
-          src="/./assets/meet.png"
+          src="/CWAWebsite/assets/meet.png"
           alt="meet illustration"
           width={500}
           height={283}
@@ -40,7 +40,7 @@ const OurFocus = () => {
         />
 
         <TextBlock
-          src="/./assets/progress.png"
+          src="/CWAWebsite/assets/progress.png"
           alt="make an impact illustration"
           width={500}
           height={266}
@@ -51,7 +51,7 @@ const OurFocus = () => {
         />
 
         <TextBlock
-          src="/./assets/experience.png"
+          src="/CWAWebsite/assets/experience.png"
           alt="gain experience illustration"
           width={500}
           height={215}

@@ -10,7 +10,7 @@ const HistoricalProjects = () => {
       </h2>
       <div className=" flex gap-10 flex-col xl:flex-row ">
         <ProjectCard
-          src="/./assets/projectsAssets/foodoasis.jpg"
+          src="/CWAWebsite/assets/projectsAssets/foodoasis.jpg"
           width={400}
           height={300}
           title="FOOD OASIS"
@@ -18,7 +18,7 @@ const HistoricalProjects = () => {
         />
 
         <ProjectCard
-          src="/./assets/projectsAssets/uipa.jpg"
+          src="/CWAWebsite/assets/projectsAssets/uipa.jpg"
           width={400}
           height={300}
           title="UIPA.ORG"
