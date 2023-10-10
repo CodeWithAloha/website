@@ -1,4 +1,4 @@
-<!-- 
+<!--
 NOTE: The comments enclosed in these brackets are guides and will not be visible in your pull request description. Please make sure to fill out all the sections as necessary and remove the comments before submitting your PR.
 Please provide a brief description of the changes made in this PR for the "Code with Aloha Website".
 -->
@@ -6,14 +6,18 @@ Please provide a brief description of the changes made in this PR for the "Code 
 # Summary
 
 ## Changes
+
 <!-- Please mark the line that applies with an x: [x] -->
+
 - [ ] **Updated Section:** <!--(please specify which section) -->
 - [ ] **Added new feature:** <!-- (please describe) -->
 - [ ] **Fixed a bug:** <!-- (please describe) -->
 - [ ] **Updated documentation**
 
 ## Checklist
+
 <!-- Please mark the line that applies with an x: [X] -->
+
 - [ ] I have tested my changes thorougly
 - [ ] I have linked the related issue (Ex: fixes #12, closes #123 in the PR description)
 

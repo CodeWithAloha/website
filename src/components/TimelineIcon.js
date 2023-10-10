@@ -1,14 +1,11 @@
-import React from 'react'
-import {motion, useScroll} from 'framer-motion'
+import React from "react";
+import { motion, useScroll } from "framer-motion";
 
-const TimelineIcon = ({reference}) => {
-
-
-    const { scrollYProgress } = useScroll({
-      target: reference,
-      offset: ["start end", "center start"],
-    }); 
-
+const TimelineIcon = ({ reference }) => {
+  const { scrollYProgress } = useScroll({
+    target: reference,
+    offset: ["start end", "center start"],
+  });
 
   return (
     <figure className="absolute left-1 xl:left-11 stroke-black ">
@@ -36,6 +33,6 @@ const TimelineIcon = ({reference}) => {
       </svg>
     </figure>
   );
-}
+};
 
-export default TimelineIcon
+export default TimelineIcon;

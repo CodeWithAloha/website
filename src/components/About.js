@@ -9,7 +9,8 @@ const About = () => {
       <section
         id="about"
         className="bg-gradient-to-br from-cyan-200 to bg-white 
-                    flex flex-col items-center px-10" >
+                    flex flex-col items-center px-10"
+      >
         <Team />
         <OurFocus />
         <WhatToExpect />

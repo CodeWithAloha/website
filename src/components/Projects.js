@@ -33,7 +33,8 @@ export const ProjectCard = ({
         className="relative flex-1 flex items-center  
         pb-8 flex-col text-center rounded-sm"
         key={id}
-        onClick={toggleMoreInformation}>
+        onClick={toggleMoreInformation}
+      >
         <Image
           src={src}
           alt={title}
@@ -52,36 +53,41 @@ export const ProjectCard = ({
               animate-slide-in rounded-sm shadow-xl border border-slate-500/40
               py-12 overflow-y-hidden bg-white  text-sm transition-all ease-in-out 
               flex flex-col items-center justify-center gap-2
-              md:left-12 md:right-12 xl:w-1/2 2xl:bottom-[10rem] 2xl:top-[10rem]">
+              md:left-12 md:right-12 xl:w-1/2 2xl:bottom-[10rem] 2xl:top-[10rem]"
+        >
           <button
             onClick={toggleMoreInformation}
-            className="absolute top-4 right-8 text-xl hover:scale-105 opacity-80 hover:opacity-100">
+            className="absolute top-4 right-8 text-xl hover:scale-105 opacity-80 hover:opacity-100"
+          >
             <IoCloseSharp />
           </button>
-          <h2
-            className="md:hidden text-xl font-bold pb-4 mt-2 md:pb-12  uppercase">
+          <h2 className="md:hidden text-xl font-bold pb-4 mt-2 md:pb-12  uppercase">
             {title}
           </h2>
           <div
             className="flex flex-col-reverse items-center 
           md:flex-row-reverse justify-between gap-2 pb-2 
-          md:pb-12">
+          md:pb-12"
+          >
             <div className="flex flex-col items-center justify-center ">
               <h2
                 className="hidden md:block text-center text-xl font-bold  md:pb-6
-              uppercase">
+              uppercase"
+              >
                 {title}
               </h2>
               <p
                 className="hidden text-center pb-4 lg:max-w-[300px] md:block md:w-2/3 md:pb-4
-              2xl:w-[90%]">
+              2xl:w-[90%]"
+              >
                 {text}
               </p>
               <a
                 href={github}
                 target="_blank"
                 className="flex flex-row items-center justify-center gap-1 mb-2 
-                   px-4 py-2 bg-orange-300 w-[180px] rounded-md">
+                   px-4 py-2 bg-orange-300 w-[180px] rounded-md"
+              >
                 <BsCodeSlash />
                 View on GitHub
               </a>
@@ -90,7 +96,8 @@ export const ProjectCard = ({
                   href={live}
                   target="_blank"
                   className="flex flex-row items-center justify-center gap-2 text-md 
-                   px-4 py-2 bg-cyan-700 w-[180px] rounded-md text-white">
+                   px-4 py-2 bg-cyan-700 w-[180px] rounded-md text-white"
+                >
                   <MdLiveTv />
                   Live website
                 </a>
