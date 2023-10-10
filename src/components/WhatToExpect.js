@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import oneImg from "../images/one.png";
+import twoImg from "../images/two.png";
+import threeImg from "../images/three.png";
 
 const TextBlock = ({ src, width, height, title, text }) => {
   return (
@@ -34,40 +37,37 @@ const WhatToExpect = () => {
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         <TextBlock
-          src="/CWAWebsite/assets/one.png"
+          src={oneImg}
           width={500}
           height={500}
           title="Meet & Greet"
-          text="We start each meeting with a land acknowledgement, Code for
-            Americaʻs Code of Conduct, and a full round of introductions
-            including your name, where you are calling from and a question of
-            the day."
+          text="At every meeting, we come together from various locations, 
+              united by a common goal. We begin by acknowledging the communities 
+              we come from, ensuring that we set a respectful and inclusive environment. 
+              Afterward, each of the group members introduces themselves and we all 
+              discuss a question of the day."
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/two.png"
+          src={twoImg}
           width={500}
           height={500}
-          title="Debrief on projects and announcements"
-          text="  We will share key milestones, updates, and blockers on projects as
-            well as relevant news from Code for America including participating
-            in national events such as Brigade Congress, National Day of Civic
-            Hacking, and Code for America Summit. We also occasionally welcome
-            guests and partners to share what they are working on so we can
-            continue to learn about how to have impact in Hawaii."
+          title="Project Updates"
+          text="In our meetings, we keep everyone updated on project milestones, 
+              challenges, and progress. We also give guests and partners a platform 
+              to share their ongoing work, allowing us to expand our knowledge and impact. 
+              By staying connected, we continuously improve our contribution to Hawaii."
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/three.png"
+          src={threeImg}
           width={500}
           height={500}
-          title="Participate in breakout rooms"
-          text="Each month the brigade selects a Focus Project that we all work on
-            together as a brigade. We also work on developing several other
-            projects in the background through our Discovery Track. Each
-            meetup we create breakout rooms as needed to drive toward our
-            milestones on the Focus Project or explore projects in our
-            Discovery Track."
+          title="Breakout Rooms"
+          text="During each meetup, we facilitate breakout rooms tailored to our projects 
+                for targeted discussion and planning. Together in these rooms, we drive innovation 
+                and progress, contributing to the growth and betterment of our community. Your insights 
+                can make a real difference – let's achieve greatness together!"
         />
       </div>
     </div>
