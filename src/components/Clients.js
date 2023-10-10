@@ -1,9 +1,7 @@
-
 import React from "react";
 import Image from "next/image";
 import client1Img from "../images/client1.png";
 import client2Img from "../images/client2.png";
-
 
 const Clients = () => {
   return (

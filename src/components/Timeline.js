@@ -9,7 +9,6 @@ import timeline5Img from "../images/timeline-5.jpg";
 import timeline6Img from "../images/timeline-6.png";
 import timeline7Img from "../images/timeline-7.png";
 
-
 const Details = ({ src, date, title, text }) => {
   const ref = useRef(null);
   return (

@@ -4,7 +4,6 @@ import { FaMeetup } from "react-icons/fa";
 import NavBar from "./NavBar";
 import heroImg from "../images/hero-image.png";
 
-
 const HomePage = () => {
   return (
     <section className="bg-gradient-to-tr from-cyan-200 to bg-white">
@@ -19,7 +18,6 @@ const HomePage = () => {
             className="w-full max-w-[900px] animate-float"
           />
           <div className="w-1/3 h-4 mt-12 rounded-full blur-2xl bg-gradient-to-t bg-black"></div>
-
         </div>
 
         <div
