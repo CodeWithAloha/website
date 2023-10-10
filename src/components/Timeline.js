@@ -2,9 +2,8 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import TimelineIcon from "./TimelineIcon";
 
-
 const Details = ({ src, date, title, text }) => {
-  const ref=useRef(null)
+  const ref = useRef(null);
   return (
     <li
       ref={ref}
@@ -28,13 +27,13 @@ const Details = ({ src, date, title, text }) => {
 
 const Timeline = () => {
   const ref = useRef(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "center start"],
   });
-  
-const scaleY = useSpring(scrollYProgress);
+
+  const scaleY = useSpring(scrollYProgress);
   return (
     <section className=" min-h-screen  lg:py-60 bg-gradient-to-tr from-cyan-200 to bg-white-200">
       <div className="  bg-white/20 md:w-2/3 w-full mx-auto  text-center md:rounded-lg shadow-xl xl:w-1/2">

@@ -1,6 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
-
+import React from "react";
+import Image from "next/image";
 
 const Clients = () => {
   return (
@@ -18,6 +17,7 @@ const Clients = () => {
           height={500}
           className="h-full  w-1/3 lg:w-1/4 "
         />
+
         <Image
           alt="The Civil Beat - Law Center For Public Interest"
           src="/CWAWebsite/assets/projectsAssets/client2.png"
@@ -28,6 +28,6 @@ const Clients = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Clients
+export default Clients;

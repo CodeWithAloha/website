@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix && prettier . --write",
+    "lint:ci": "next lint && prettier . --check"
   },
   "dependencies": {
     "framer-motion": "^10.12.10",

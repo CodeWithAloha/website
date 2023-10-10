@@ -22,7 +22,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 const MobileCustomLink = ({ href, title, className = "", toggle }) => {
   const router = useRouter();
   const handleClick = () => {
-    toggle() //automatically close the mobile nav div when clicking on a link
+    toggle(); //automatically close the mobile nav div when clicking on a link
     router.push(href);
   };
   return (
@@ -69,8 +69,9 @@ const NavBar = () => {
           ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}
         ></span>
         <span
-          className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${isOpen ? "opacity-0" : "opacity-100"
-            }`}
+          className={`bg-black block h-0.5 w-6 rounded-sm m-0.5 ${
+            isOpen ? "opacity-0" : "opacity-100"
+          }`}
         ></span>
         <span
           className={`bg-black block h-0.5 w-6 rounded-sm transition-all 300ms ease-in-out 
@@ -101,7 +102,6 @@ const NavBar = () => {
               title="Join us!"
               toggle={handleClick}
             />
-
           </nav>
         </div>
       ) : null}

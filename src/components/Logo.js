@@ -1,8 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-
-
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Logo = () => {
   return (
@@ -16,8 +14,6 @@ const Logo = () => {
       />
     </Link>
   );
-}
+};
 
-export default Logo
-
-
+export default Logo;

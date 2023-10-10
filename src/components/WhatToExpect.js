@@ -1,20 +1,26 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
-const TextBlock =({src, width, height, title, text}) => {
-    return (
-      <div className=" flex-1 h-12 flex items-center flex-col ">
-        <Image src={src} alt='' width={width} height={height} className="h-12 w-12" />
-        <h5
-          className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
+const TextBlock = ({ src, width, height, title, text }) => {
+  return (
+    <div className=" flex-1 h-12 flex items-center flex-col ">
+      <Image
+        src={src}
+        alt=""
+        width={width}
+        height={height}
+        className="h-12 w-12"
+      />
+      <h5
+        className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
           font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
-        >
-          {title}
-        </h5>
-        <p className="text-md xl:text-xl">{text}</p>
-      </div>
-    );
-}
+      >
+        {title}
+      </h5>
+      <p className="text-md xl:text-xl">{text}</p>
+    </div>
+  );
+};
 
 const WhatToExpect = () => {
   return (
@@ -66,6 +72,6 @@ const WhatToExpect = () => {
       </div>
     </div>
   );
-}
+};
 
-export default WhatToExpect
+export default WhatToExpect;

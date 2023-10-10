@@ -1,7 +1,6 @@
 import React from "react";
 
-const AnimatedText = ({text,className="" }) => {
-  
+const AnimatedText = ({ text, className = "" }) => {
   return (
     <div
       className="w-full mx-auto py-2 items-center justify-center text-center
