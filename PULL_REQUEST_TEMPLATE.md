@@ -3,9 +3,11 @@ NOTE: The comments enclosed in these brackets are guides and will not be visible
 Please provide a brief description of the changes made in this PR for the "Code with Aloha Website".
 -->
 
-# Summary
-
-## Changes
+## Summary
+<!--
+Describe your changes 
+-->
+### Changes
 
 <!-- Please mark the line that applies with an x: [x] -->
 
@@ -14,26 +16,16 @@ Please provide a brief description of the changes made in this PR for the "Code 
 - [ ] **Fixed a bug:** <!-- (please describe) -->
 - [ ] **Updated documentation**
 
-## Checklist
-
-<!-- Please mark the line that applies with an x: [X] -->
-
-- [ ] I have tested my changes thorougly
-- [ ] I have linked the related issue (Ex: fixes #12, closes #123 in the PR description)
-
-## Related Issue
+### Related Issue
 
 <!--Please link to any related issue or provide context for the changes. -->
 
-## Screenshots
+### Screenshots
 
 <!-- If your changes affect the UI or layout, please attach before-and-after screenshots. -->
 
-## How I Tested
 
-<!-- Please describe how you tested the changes (e.g., locally, on the live site, etc.). -->
-
-## Notes
+<!-- ## Notes -->
 
 <!-- Any additional information or context about the changes.
 
