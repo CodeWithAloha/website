@@ -1,5 +1,7 @@
 import React from "react";
 import { ProjectCard } from "./Projects";
+import foodOasisImg from "../images/foodoasis.jpg";
+import uipaImg from "../images/uipa.jpg";
 
 const HistoricalProjects = () => {
   return (
@@ -10,7 +12,7 @@ const HistoricalProjects = () => {
       </h2>
       <div className=" flex gap-10 flex-col xl:flex-row ">
         <ProjectCard
-          src="/CWAWebsite/assets/projectsAssets/foodoasis.jpg"
+          src={foodOasisImg}
           width={400}
           height={300}
           title="FOOD OASIS"
@@ -18,7 +20,7 @@ const HistoricalProjects = () => {
         />
 
         <ProjectCard
-          src="/CWAWebsite/assets/projectsAssets/uipa.jpg"
+          src={uipaImg}
           width={400}
           height={300}
           title="UIPA.ORG"

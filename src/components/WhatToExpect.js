@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import oneImg from "../images/one.png";
+import twoImg from "../images/two.png";
+import threeImg from "../images/three.png";
 
 const TextBlock =({src, width, height, title, text}) => {
     return (
@@ -28,7 +31,7 @@ const WhatToExpect = () => {
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         <TextBlock
-          src="/CWAWebsite/assets/one.png"
+          src={oneImg}
           width={500}
           height={500}
           title="Meet & Greet"
@@ -39,7 +42,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/two.png"
+          src={twoImg}
           width={500}
           height={500}
           title="Debrief on projects and announcements"
@@ -52,7 +55,7 @@ const WhatToExpect = () => {
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/three.png"
+          src={threeImg}
           width={500}
           height={500}
           title="Participate in breakout rooms"
