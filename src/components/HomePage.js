@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { FaMeetup } from "react-icons/fa";
 import NavBar from './NavBar';
+import heroImg from "../images/hero-image.png";
 
 const HomePage = () => {
   return (
@@ -9,7 +10,7 @@ const HomePage = () => {
       <NavBar />
       <div className="flex items-center justify-center flex-col lg:flex-row">
         <div className="scale-[80%]  2xl:scale-90 xl:pl-20 flex flex-col items-center">
-          <Image alt='' src="/CWAWebsite/hero-image.png" width={1300} height={1300} className="w-full max-w-[900px] animate-float" />
+          <Image alt='' src={heroImg} width={1300} height={1300} className="w-full max-w-[900px] animate-float" />
           <div className='w-1/3 h-4 mt-12 rounded-full blur-2xl bg-gradient-to-t bg-black'></div>
         </div>
 

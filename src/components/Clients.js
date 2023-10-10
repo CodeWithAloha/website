@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-
+import client1Img from "../images/client1.png";
+import client2Img from "../images/client2.png";
 
 const Clients = () => {
   return (
@@ -13,14 +14,14 @@ const Clients = () => {
       <div className="flex items-center justify-center pb-40">
         <Image
           alt="Hawaii Zoning Atlus"
-          src="/CWAWebsite/assets/projectsAssets/client1.png"
+          src={client1Img}
           width={500}
           height={500}
           className="h-full  w-1/3 lg:w-1/4 "
         />
         <Image
           alt="The Civil Beat - Law Center For Public Interest"
-          src="/CWAWebsite/assets/projectsAssets/client2.png"
+          src={client2Img}
           width={500}
           height={500}
           className="h-full w-1/3 lg:w-1/4 "

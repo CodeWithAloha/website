@@ -5,6 +5,10 @@ import Clients from "./Clients";
 import { IoCloseSharp } from "react-icons/io5";
 import { BsCodeSlash } from "react-icons/bs";
 import { MdLiveTv } from "react-icons/md";
+import habitatFullImg from "../images/habitat-full.jpg";
+import projectsImg from "../images/projects.png";
+import hawaiiZoningAtlasImg from "../images/HawaiiZoningAtlas.png";
+import hierrImg from "../images/HIERR.png";
 
 export const ProjectCard = ({
   id,
@@ -124,7 +128,7 @@ const Projects = () => {
       className=" flex flex-col items-center xl:p-20 px-5 bg-gradient-to-br from-cyan-200 to bg-white-200"
     >
       <Image
-        src="/CWAWebsite/assets/projectsAssets/projects.png"
+        src={projectsImg}
         alt="Project icon"
         className="mt-20"
         width={50}
@@ -143,7 +147,7 @@ const Projects = () => {
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
         <ProjectCard
           id="hza"
-          src="/CWAWebsite/assets/projectsAssets/HawaiiZoningAtlas.png"
+          src={hawaiiZoningAtlasImg}
           title="Hawaii Zoning Atlas"
           text="An interactive map exploring how restrictive zoning laws can make it
            difficult to build diverse, affordable housing."
@@ -161,7 +165,7 @@ const Projects = () => {
 
         <ProjectCard
           id="hfu"
-          src="/CWAWebsite/assets/projectsAssets/habitat-full.jpg"
+          src={habitatFullImg}
           title="Habitat for Humanity"
           text=" A nonprofit organization that helps people
             in your community and around the world build or improve a place they
@@ -180,7 +184,7 @@ const Projects = () => {
 
         <ProjectCard
           id="hierr"
-          src="/CWAWebsite/assets/projectsAssets/HIERR.png"
+          src={hierrImg}
           title="HIERR"
           text="The HIERR (Hawaiʻi Economic Recovery & Resilience) Project aims to enable actions toward a more resilient,
             equitable, and sustainable economy."

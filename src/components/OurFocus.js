@@ -1,5 +1,8 @@
 import React from "react";
 import Image from 'next/image'
+import meetImg from "../images/meet.png";
+import progressImg from "../images/progress.png";
+import experienceImg from "../images/experience.png";
 
 const TextBlock = ({ src, alt, width, height, title, text, className = "" }) => {
   return (
@@ -29,7 +32,7 @@ const OurFocus = () => {
           Our focus{" "}
         </h2>
         <TextBlock
-          src="/CWAWebsite/assets/meet.png"
+          src={meetImg}
           alt="meet illustration"
           width={500}
           height={283}
@@ -40,7 +43,7 @@ const OurFocus = () => {
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/progress.png"
+          src={progressImg}
           alt="make an impact illustration"
           width={500}
           height={266}
@@ -51,7 +54,7 @@ const OurFocus = () => {
         />
 
         <TextBlock
-          src="/CWAWebsite/assets/experience.png"
+          src={experienceImg}
           alt="gain experience illustration"
           width={500}
           height={215}
