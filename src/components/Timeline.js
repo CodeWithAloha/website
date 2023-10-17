@@ -1,13 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import TimelineIcon from "./TimelineIcon";
-import timeline1Img from "../images/timeline-1.jpg";
-import timeline2Img from "../images/timeline-2.jpg";
-import timeline3Img from "../images/timeline-3.jpg";
-import timeline4Img from "../images/timeline-4.jpg";
-import timeline5Img from "../images/timeline-5.jpg";
-import timeline6Img from "../images/timeline-6.png";
-import timeline7Img from "../images/timeline-7.png";
+import { getTimeline } from "@/data/webData";
+// import timeline1Img from "../images/timeline-1.jpg";
+// import timeline2Img from "../images/timeline-2.jpg";
+// import timeline3Img from "../images/timeline-3.jpg";
+// import timeline4Img from "../images/timeline-4.jpg";
+// import timeline5Img from "../images/timeline-5.jpg";
+// import timeline6Img from "../images/timeline-6.png";
+// import timeline7Img from "../images/timeline-7.png";
 
 const Details = ({ src, date, title, text }) => {
   const ref = useRef(null);
@@ -33,6 +34,12 @@ const Details = ({ src, date, title, text }) => {
 };
 
 const Timeline = () => {
+  const [timeline, setTimeline] = useState([])
+
+  useEffect(() => {
+    setTimeline(getTimeline())
+  }, []);
+
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -62,52 +69,15 @@ const Timeline = () => {
           />
 
           <ul className="w-full flex flex-col items-start justify-between pb-[120px]">
-            <Details
-              src={timeline1Img}
-              date="2009"
-              title="Humble beginnings"
-              text="Code for Hawaii was being born from idea to family."
+            {timeline.map((event) => (
+              <Details
+              key={event.id}
+              src={event.src}
+              date={event.date}
+              title={event.title}
+              text={event.text}
             />
-            <Details
-              src={timeline2Img}
-              date="2011"
-              title="First Civic App Released"
-              text="We made it offical and released our first app aimed to help and improve our community.”"
-            />
-            <Details
-              src={timeline3Img}
-              date="2012"
-              title="Code for America"
-              text="Honolulu Organizes CityCamp 2012. That was the first local event to introduce Code for America, a national organization that aims to build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use."
-            />
-
-            <Details
-              src={timeline4Img}
-              date="August 2012"
-              title="Code for Hawaii joins the brigade!"
-              text="Code for Hawaii joins the inaugural cohort of Brigades along with Portland, ME; Austin; Boston; Lexington; Philly; Chicago; Denver; San Diego; Grand Rapids; Detroit; Arlington; Asheville; Oakland; Bend; Alexandria"
-            />
-
-            <Details
-              src={timeline5Img}
-              date="2015"
-              title="Leadership reboot"
-              text="Code for Hawaii welcomes a reboot and new leadership."
-            />
-
-            <Details
-              src={timeline6Img}
-              date="2020"
-              title="Kaiulu Strategic Promise Developed"
-              text="Code for Hawaii develops Kaiulu Strategic Promise and clarifies strategic vision for the organization going forward!"
-            />
-
-            <Details
-              src={timeline7Img}
-              date="June 2023"
-              title="Code for America Brigade Cancellation"
-              text="Code for America cancels the local brigades program. Code for Hawaii rebrands as Code With Aloha and joins many other previous brigades in the Alliance of Civic Technologists."
-            />
+            ))}                        
           </ul>
         </div>
       </div>

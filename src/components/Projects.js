@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import HistoricalProjects from "./HistoricalProjects";
 import Clients from "./Clients";
 import { IoCloseSharp } from "react-icons/io5";
 import { BsCodeSlash } from "react-icons/bs";
 import { MdLiveTv } from "react-icons/md";
-import habitatFullImg from "../images/habitat-full.jpg";
+// import habitatFullImg from "../images/habitat-full.jpg";
 import projectsImg from "../images/projects.png";
-import hawaiiZoningAtlasImg from "../images/HawaiiZoningAtlas.png";
-import hierrImg from "../images/HIERR.png";
+// import hawaiiZoningAtlasImg from "../images/HawaiiZoningAtlas.png";
+// import hierrImg from "../images/HIERR.png";
+import { getCurrentProjects } from "@/data/webData";
 
 export const ProjectCard = ({
   id,
@@ -23,6 +24,8 @@ export const ProjectCard = ({
   hasWebsite,
 }) => {
   const [showMore, setShowMore] = useState(false);
+  
+  
 
   const toggleMoreInformation = () => {
     setShowMore(!showMore);
@@ -129,6 +132,13 @@ export const ProjectCard = ({
 };
 
 const Projects = () => {
+
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    setProjects(getCurrentProjects())
+  }, [])
+
   return (
     <section
       id="projects"
@@ -152,61 +162,20 @@ const Projects = () => {
       </p>
 
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
-        <ProjectCard
-          id="hza"
-          src={hawaiiZoningAtlasImg}
-          title="Hawaii Zoning Atlas"
-          text="An interactive map exploring how restrictive zoning laws can make it
-           difficult to build diverse, affordable housing."
-          about="Building an online-interactive map to educate the public on zoning and 
-           land use issues. Our vision is to connect researchers, educators, and advocates."
-          goals="The project's goals are to build an interactive online map to educate 
-           the public on zoning and land use issues and generate talking points 
-           for affordable housing advocates in Hawaii. Our second goal is to create 
-           a website that serves as a hub for the resulting coalition of researchers, 
-           educators, and advocates."
-          github="https://github.com/CodeWithAloha/Hawaii-Zoning-Atlas"
-          live="https://hawaiizoningatlas.com/#9/20.4162/-157.4015/"
-          hasWebsite={true}
-        />
-
-        <ProjectCard
-          id="hfu"
-          src={habitatFullImg}
-          title="Habitat for Humanity"
-          text=" A nonprofit organization that helps people
-            in your community and around the world build or improve a place they
-            can call home."
-          className="max-h-1/2"
-          about="Habitat for Humanity Leeward O`ahu (Leeward Habitat) is a local affiliate 
-          of a world- wide organization that builds houses with volunteer labor and sells 
-          those houses to very low-income families (those earning under 50% of the
-             area median income). "
-          goals="Habitat works to build homes in Leeward O`ahu which includes the areas of Kapolei, Ewa Beach, and Wai’anae. 
-          It is our mission to eliminate substandard housing and homelessness in Leeward O`ahu."
-          github="https://github.com/CodeWithAloha/LeewardHabitatForHumanity"
-          live=""
-          hasWebsite={false}
-        />
-
-        <ProjectCard
-          id="hierr"
-          src={hierrImg}
-          title="HIERR"
-          text="The HIERR (Hawaiʻi Economic Recovery & Resilience) Project aims to enable actions toward a more resilient,
-            equitable, and sustainable economy."
-          about="The HIERR Project aims to enable actions toward a more resilient, equitable, and sustainable economy. 
-          This planning process is designed to learn from the economic impacts and experiences of hardship associated 
-          with the COVID-19 pandemic to inform and enable actions toward a more resilient, equitable, and sustainable economy."
-          goals="The CFH project is focused on developing a digital engagement platform via Pol.is and 
-          onboarding materials to solicit resident sentiments on vision and value statements for Hawaii's 
-          economic future. Residents will be invited to in-person workshops for onboarding and introduction 
-          to the established Pol.is, where they will be invited to interact with seeded vision and value 
-          statements as well as add new ones."
-          github="https://github.com/CodeWithAloha/HIERR"
-          live="https://hierr.vercel.app/"
-          hasWebsite={true}
-        />
+        {projects.map((project) => (
+          <ProjectCard 
+          key={project.id}
+          id={project.id}
+          src={project.src}
+          title={project.title}
+          text={project.text}
+          about={project.about}
+          goals={project.goals}
+          github={project.github}
+          live={project.live}
+          hasWebsite={project.hasWebsite}
+          />
+        ))}
       </div>
       <HistoricalProjects />
       <Clients />

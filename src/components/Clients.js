@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import client1Img from "../images/client1.png";
-import client2Img from "../images/client2.png";
+import { getClients } from "@/data/webData";
 
 const Clients = () => {
+  const [clients, setClients] = useState([])
+
+  useEffect(() => {
+    setClients(getClients())
+  }, []);
+  
   return (
     <div className="pt-20">
       <h2 className="text-4xl xl:text-7xl pt-10 drop-shadow-xl text-center py-20">
@@ -11,21 +16,17 @@ const Clients = () => {
       </h2>
 
       <div className="flex items-center justify-center pb-40">
-        <Image
-          alt="Hawaii Zoning Atlus"
-          src={client1Img}
-          width={500}
-          height={500}
-          className="h-full  w-1/3 lg:w-1/4 "
+        
+        {clients.map((client) => (
+          <Image
+          key={client.id}
+          alt={client.alt}
+          src={client.src}
+          width={client.width}
+          height={client.height}
+          className={client.className}
         />
-
-        <Image
-          alt="The Civil Beat - Law Center For Public Interest"
-          src={client2Img}
-          width={500}
-          height={500}
-          className="h-full w-1/3 lg:w-1/4 "
-        />
+        ))} 
       </div>
     </div>
   );

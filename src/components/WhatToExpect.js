@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import oneImg from "../images/one.png";
-import twoImg from "../images/two.png";
-import threeImg from "../images/three.png";
+import { getExpectations } from "@/data/webData";
 
 const TextBlock = ({ src, width, height, title, text }) => {
   return (
@@ -26,6 +24,11 @@ const TextBlock = ({ src, width, height, title, text }) => {
 };
 
 const WhatToExpect = () => {
+    const [expectations, setExpectations] = useState([])
+
+    useEffect(() => {
+      setExpectations(getExpectations())
+    }, []);
   return (
     <div
       className=" flex flex-col items-center justify-center
@@ -36,7 +39,18 @@ const WhatToExpect = () => {
       </h4>
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
-        <TextBlock
+        {expectations.map((expect) => (
+          <TextBlock
+          key={expect.id}
+          src={expect.src}
+          width={expect.width}
+          height={expect.height}
+          title={expect.title}
+          text={expect.text}
+          />
+        ))}
+        
+        {/* <TextBlock
           src={oneImg}
           width={500}
           height={500}
@@ -68,7 +82,7 @@ const WhatToExpect = () => {
                 for targeted discussion and planning. Together in these rooms, we drive innovation 
                 and progress, contributing to the growth and betterment of our community. Your insights 
                 can make a real difference – let's achieve greatness together!"
-        />
+        /> */}
       </div>
     </div>
   );
