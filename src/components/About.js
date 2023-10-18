@@ -1,7 +1,7 @@
 import React from "react";
 import WhatToExpect from "./WhatToExpect";
 import Team from "./Team";
-import {TeamMember} from "./Team";
+import { TeamMember } from "./Team";
 import OurFocus from "./OurFocus";
 
 const About = () => {

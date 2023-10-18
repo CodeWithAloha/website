@@ -1,34 +1,30 @@
 import React from "react";
 import Image from "next/image";
-import { AiOutlineMail,AiOutlineGithub } from "react-icons/ai";
-import data from "contributors.json"
+import { AiOutlineMail, AiOutlineGithub } from "react-icons/ai";
+import data from "contributors.json";
 
 const uniqueNames = []; // to avoid duplicates and bot names
 
 // Loop through the each Repo
 for (const repos in data.contributors) {
-
   // Loop through the each Repo's contributors and add all to a list
   const repoContributors = data.contributors[repos];
 
   // Loop through the all of the contrubtors to grab each individual contributor
   for (const contributor of repoContributors) {
-    
     const name = contributor.name;
 
     // Check if the name is not already in the uniqueNames array as well as the dependabot[bot]
-    if (!uniqueNames.includes(name) && name !== 'dependabot[bot]') {
-      uniqueNames.push(name + '\n');
+    if (!uniqueNames.includes(name) && name !== "dependabot[bot]") {
+      uniqueNames.push(name + "\n");
     }
   }
 }
 
-
 export const TeamMember = ({ src, name }) => {
   return (
     <div className="flex flex-col justify-center m-8 text-center hover:scale-105">
-
-{/* 
+      {/* 
       <Image
         alt=""
         className="self-center  flex-shrink-0 w-32 h-32 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -36,16 +32,16 @@ export const TeamMember = ({ src, name }) => {
       /> */}
 
       <div className="flex flex-row items-center justify-center py-2">
-      <AiOutlineGithub fontSize="2rem" />
+        <AiOutlineGithub fontSize="2rem" />
         <h2 className="pl-2 text-md xl:text-xl">Contributors:</h2>{" "}
       </div>
       <div>
-      <ul className="grid grid-cols-3 gap-4 pl-4">
-        {uniqueNames.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
-    </div>
+        <ul className="grid grid-cols-3 gap-4 pl-4">
+          {uniqueNames.map((name, index) => (
+            <li key={index}>{name}</li>
+          ))}
+        </ul>
+      </div>
       {/* <p className="text-md xl:text-xl font-semibold leading-tight">{uniqueNames}</p> */}
     </div>
   );
