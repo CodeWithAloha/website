@@ -1,6 +1,7 @@
 import React from "react";
 import WhatToExpect from "./WhatToExpect";
 import Team from "./Team";
+import {TeamMember} from "./Team";
 import OurFocus from "./OurFocus";
 
 const About = () => {
@@ -12,6 +13,7 @@ const About = () => {
                     flex flex-col items-center px-10"
       >
         <Team />
+        <TeamMember />
         <OurFocus />
         <WhatToExpect />
       </section>
