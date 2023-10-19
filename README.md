@@ -6,18 +6,18 @@
 
 :computer: **Live Site** [here](https://codewithaloha.github.io/CWAWebsite/).
 
-:books: **Features** of our project include a dynamic and responsive user interface powered by NextJS & React, stylish components with Tailwind CSS, and smooth animations and transitions through Framer Motion to enhance the user experience.  
+:books: **Features** of our project include a dynamic and responsive user interface powered by NextJS & React, stylish components with Tailwind CSS, and smooth animations and transitions through Framer Motion to enhance the user experience.
 
-🚀 **Getting Started**  
+🚀 **Getting Started**
 
 To contribute to this project, follow these steps:
 
 **1. Fork the Repository**: Click the "Fork" button at the top right corner of this repository's page. This will create a copy of the project in your GitHub account.
 **2. Clone Your Fork**: Now, you need to clone your forked repository to your local machine. Replace [your-username] with your GitHub username in the URL below:
 
- ```Node
- git clone https://github.com/[your-username]/CWAWebsite.git
- ```
+```Node
+git clone https://github.com/[your-username]/CWAWebsite.git
+```
 
 **3. Navigate to the project directory**:
 
