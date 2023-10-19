@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import meetImg from "../images/meet.png";
-import progressImg from "../images/progress.png";
-import experienceImg from "../images/experience.png";
+import { getFocus } from "@/data/webData";
 
 const TextBlock = ({
   src,
@@ -35,6 +33,12 @@ const TextBlock = ({
 };
 
 const OurFocus = () => {
+  const [focus, setFocus] = useState([]);
+
+  useEffect(() => {
+    setFocus(getFocus());
+  }, []);
+
   return (
     <>
       <div className="  bg-white/20 text-center rounded-lg shadow-xl pt-10 pb-20 mt-24">
@@ -45,38 +49,18 @@ const OurFocus = () => {
           {" "}
           Our focus{" "}
         </h2>
-        <TextBlock
-          src={meetImg}
-          alt="meet illustration"
-          width={500}
-          height={283}
-          title="Meet new people"
-          text="Build with, not for. We are a community of people who are passionate
-          about helping others. We are here to support each other and
-          build together."
-        />
 
-        <TextBlock
-          src={progressImg}
-          alt="make an impact illustration"
-          width={500}
-          height={266}
-          title="Make a Difference"
-          text="Nobody is coming to save us. It's up to us to impact our community and drive change.
-          We are the ones we've been waiting for. We are the change that we seek."
-          className="xl:flex-row-reverse"
-        />
-
-        <TextBlock
-          src={experienceImg}
-          alt="gain experience illustration"
-          width={500}
-          height={215}
-          title="Gain Experience"
-          text="Gain experience as a beginner, pay it forward as a mentor. We help
-              each other grow and together we make a difference in our
-              community."
-        />
+        {focus.map((topic) => (
+          <TextBlock
+            key={topic.id}
+            src={topic.src}
+            alt={topic.alt}
+            width={topic.width}
+            height={topic.height}
+            title={topic.title}
+            text={topic.text}
+          />
+        ))}
       </div>
     </>
   );
