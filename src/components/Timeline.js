@@ -34,10 +34,10 @@ const Details = ({ src, date, title, text }) => {
 };
 
 const Timeline = () => {
-  const [timeline, setTimeline] = useState([])
+  const [timeline, setTimeline] = useState([]);
 
   useEffect(() => {
-    setTimeline(getTimeline())
+    setTimeline(getTimeline());
   }, []);
 
   const ref = useRef(null);
@@ -71,13 +71,13 @@ const Timeline = () => {
           <ul className="w-full flex flex-col items-start justify-between pb-[120px]">
             {timeline.map((event) => (
               <Details
-              key={event.id}
-              src={event.src}
-              date={event.date}
-              title={event.title}
-              text={event.text}
-            />
-            ))}                        
+                key={event.id}
+                src={event.src}
+                date={event.date}
+                title={event.title}
+                text={event.text}
+              />
+            ))}
           </ul>
         </div>
       </div>

@@ -3,11 +3,13 @@ NOTE: The comments enclosed in these brackets are guides and will not be visible
 Please provide a brief description of the changes made in this PR for the "Code with Aloha Website".
 -->
 
-## Summary
+# Summary
+
 <!--
-Describe your changes 
+Describe your changes
 -->
-### Changes
+
+## Changes
 
 <!-- Please mark the line that applies with an x: [x] -->
 
@@ -23,7 +25,6 @@ Describe your changes
 ### Screenshots
 
 <!-- If your changes affect the UI or layout, please attach before-and-after screenshots. -->
-
 
 <!-- ## Notes -->
 

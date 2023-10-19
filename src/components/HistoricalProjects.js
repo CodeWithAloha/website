@@ -8,8 +8,8 @@ const HistoricalProjects = () => {
   const [histProjects, setHistProjects] = useState([]);
 
   useEffect(() => {
-    setHistProjects(getHistoricalProjects())
-  }, [])
+    setHistProjects(getHistoricalProjects());
+  }, []);
   return (
     <div className="pt-20">
       {/* <img src="./assets/projectsAssets/historicalprojects.png" className="h-40 mt-20 mx-auto" /> */}
@@ -18,15 +18,14 @@ const HistoricalProjects = () => {
       </h2>
       <div className=" flex gap-10 flex-col xl:flex-row ">
         {histProjects.map((project) => (
-        <ProjectCard
-        key={project.id}
-        src={project.src}
-        width={project.width}
-        height={project.height}
-        title={project.title}
-        text={project.text}
-      />
-
+          <ProjectCard
+            key={project.id}
+            src={project.src}
+            width={project.width}
+            height={project.height}
+            title={project.title}
+            text={project.text}
+          />
         ))}
         {/* <ProjectCard
           src={foodOasisImg}

@@ -24,8 +24,6 @@ export const ProjectCard = ({
   hasWebsite,
 }) => {
   const [showMore, setShowMore] = useState(false);
-  
-  
 
   const toggleMoreInformation = () => {
     setShowMore(!showMore);
@@ -132,12 +130,11 @@ export const ProjectCard = ({
 };
 
 const Projects = () => {
-
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(getCurrentProjects())
-  }, [])
+    setProjects(getCurrentProjects());
+  }, []);
 
   return (
     <section
@@ -163,17 +160,17 @@ const Projects = () => {
 
       <div className=" flex pt-10  gap-20 flex-col xl:flex-row">
         {projects.map((project) => (
-          <ProjectCard 
-          key={project.id}
-          id={project.id}
-          src={project.src}
-          title={project.title}
-          text={project.text}
-          about={project.about}
-          goals={project.goals}
-          github={project.github}
-          live={project.live}
-          hasWebsite={project.hasWebsite}
+          <ProjectCard
+            key={project.id}
+            id={project.id}
+            src={project.src}
+            title={project.title}
+            text={project.text}
+            about={project.about}
+            goals={project.goals}
+            github={project.github}
+            live={project.live}
+            hasWebsite={project.hasWebsite}
           />
         ))}
       </div>

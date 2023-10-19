@@ -33,10 +33,10 @@ const TextBlock = ({
 };
 
 const OurFocus = () => {
-  const [focus, setFocus] = useState([])
+  const [focus, setFocus] = useState([]);
 
   useEffect(() => {
-    setFocus(getFocus())
+    setFocus(getFocus());
   }, []);
 
   return (
@@ -50,17 +50,16 @@ const OurFocus = () => {
           Our focus{" "}
         </h2>
 
-        
         {focus.map((topic) => (
           <TextBlock
-          key={topic.id}
-          src={topic.src}
-          alt={topic.alt}
-          width={topic.width}
-          height={topic.height}
-          title={topic.title}
-          text={topic.text}
-        />
+            key={topic.id}
+            src={topic.src}
+            alt={topic.alt}
+            width={topic.width}
+            height={topic.height}
+            title={topic.title}
+            text={topic.text}
+          />
         ))}
       </div>
     </>

@@ -24,11 +24,11 @@ const TextBlock = ({ src, width, height, title, text }) => {
 };
 
 const WhatToExpect = () => {
-    const [expectations, setExpectations] = useState([])
+  const [expectations, setExpectations] = useState([]);
 
-    useEffect(() => {
-      setExpectations(getExpectations())
-    }, []);
+  useEffect(() => {
+    setExpectations(getExpectations());
+  }, []);
   return (
     <div
       className=" flex flex-col items-center justify-center
@@ -41,15 +41,15 @@ const WhatToExpect = () => {
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         {expectations.map((expect) => (
           <TextBlock
-          key={expect.id}
-          src={expect.src}
-          width={expect.width}
-          height={expect.height}
-          title={expect.title}
-          text={expect.text}
+            key={expect.id}
+            src={expect.src}
+            width={expect.width}
+            height={expect.height}
+            title={expect.title}
+            text={expect.text}
           />
         ))}
-        
+
         {/* <TextBlock
           src={oneImg}
           width={500}
