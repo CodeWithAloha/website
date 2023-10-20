@@ -5,7 +5,7 @@ import logoImg from "../images/logo.png";
 
 const Logo = () => {
   return (
-    <Link href="/" whileHover={{ scale: 1.5 }}>
+    <Link href="/" whilehover={{ scale: 1.5 }}>
       <Image
         alt="Code with Aloha logo"
         src={logoImg}
