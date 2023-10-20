@@ -4,9 +4,11 @@ Please provide a brief description of the changes made in this PR for the "Code 
 -->
 
 ## Summary
+
 <!--
-Describe your changes 
+Describe your changes
 -->
+
 ### Changes
 
 <!-- Please mark the line that applies with an x: [x] -->
@@ -23,7 +25,6 @@ Describe your changes
 ### Screenshots
 
 <!-- If your changes affect the UI or layout, please attach before-and-after screenshots. -->
-
 
 <!-- ## Notes -->
 

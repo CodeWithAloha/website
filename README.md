@@ -13,22 +13,31 @@ To contribute to this project, follow these steps:
 
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository's page. This will create a copy of the project in your GitHub account.
 2. **Clone Your Fork**: Now, you need to clone your forked repository to your local machine. Replace [your-username] with your GitHub username in the URL below:
+
 ```
 git clone https://github.com/[your-username]/CWAWebsite.git
 ```
+
 3. **Navigate to the project directory**:
+
 ```
 cd CWAWebsite
 ```
+
 3. **Install the dependencies**:
+
 ```
 npm install
 ```
+
 5. **Start the development server**:
+
 ```
 npm run dev
 ```
+
 7. **Run linter**:
+
 ```
 npm run lint
 ```
