@@ -23,7 +23,7 @@ for (const repos in data.contributors) {
 
 export const TeamMember = ({ src, name }) => {
   return (
-    <div className="flex flex-col justify-center m-8 text-center hover:scale-105">
+    <div className="flex flex-col justify-center m-8 text-center">
       {/* 
       <Image
         alt=""
