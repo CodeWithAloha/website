@@ -10,6 +10,7 @@ env:
     (
       "Hawaii-Zoning-Atlas"
       "HIERR"
+      "CWAWebsite"
     )
 jobs:
   gather-the-contributors:
