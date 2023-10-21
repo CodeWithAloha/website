@@ -28,11 +28,18 @@ jobs:
           do
             echo "  \"$item\": [" >> contributors.json
 
-            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[].login')
+            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors)
+            
+
+            for contributor in $(echo "$contributors" | jq -r '.[] | .login'); do
+                name=$(curl -s -H "Accept: application/vnd.github+json" "https://api.github.com/users/$contributor" | jq -r '.name')
+                avatar=$(curl -s -H "Accept: application/vnd.github+json" "https://api.github.com/users/$contributor" | jq -r '.avatar_url')
+                profile_url=$(curl -s -H "Accept: application/vnd.github+json" "https://api.github.com/users/$contributor" | jq -r '.html_url')
+
 
             for contributor in $contributors
             do
-              echo "  {\"name\": \"$contributor\"}," >> contributors.json
+              echo "  {\"name\": \"$contributor\",\"avatar\": \"$contributor\ ,\"profile_url\": \"$contributor\}," >> contributors.json
             done
 
             sed -i '$ s/.$//' contributors.json
