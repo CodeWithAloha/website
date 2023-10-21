@@ -38,7 +38,7 @@ export const TeamMember = ({ src, name }) => {
       <div>
         <ul className="grid grid-cols-3 gap-4 pl-4">
           {uniqueNames.map((name, index) => (
-                  /* added hover and mouse pointer classes as an option below for each individual contributor */
+            /* added hover and mouse pointer classes as an option below for each individual contributor */
             // <li className="hover:scale-105 cursor-pointer" key={index}>{name}</li>
             <li key={index}>{name}</li>
           ))}
