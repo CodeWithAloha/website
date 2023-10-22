@@ -27,10 +27,12 @@ jobs:
           do
             echo "  \"$item\": [" >> contributors.json
           
-            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[].login')
+            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] | {login: .login, avatar_url: .avatar_url}')
             for contributor in $contributors
             do
-              echo "  {\"name\": \"$contributor\"}," >> contributors.json
+              # echo "  {\"name\": \"$contributor\"}," >> contributors.json
+              echo "  {\"name\": \"$contributor\", \"avatar_url\": \"$avatar_url\"}," >> contributors.json
+
             done
             sed -i '$ s/.$//' contributors.json
             echo "  ]," >> contributors.json
