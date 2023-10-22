@@ -27,7 +27,7 @@ jobs:
           do
             echo "  \"$item\": [" >> contributors.json
           
-            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] .login, .avatar_url')
+            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[].login' | jq -r '.[].avatar_url')
             for contributor in $contributors
             do
               # echo "  {\"name\": \"$contributor\"}," >> contributors.json
