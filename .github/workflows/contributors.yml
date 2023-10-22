@@ -31,7 +31,7 @@ jobs:
             for contributor in $contributors
             do
 
-              echo "\"$contributor\"},">> contributors.json
+              echo {"\"$contributor\"},">> contributors.json
               # "  {\"name\": \"$contributor\"},"
 
             done
