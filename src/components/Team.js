@@ -19,12 +19,14 @@ for (const repo in data.contributors) {
 
   // Loop through the filtered contributors to grab each individual contributor
   for (const contributor of repoContributors) {
-    const name = contributor.login;
+    const name = contributor.username;
     const avatar = contributor.avatar_url;
+    const url = contributor.url;
+
 
     // Check if the username is already in the Map to avoid duplicates
     if (!uniqueContributors.has(name)) {
-      uniqueContributors.set(name, { name, avatar });
+      uniqueContributors.set(name, { name, avatar, url });
     }
   }
 }
@@ -33,6 +35,7 @@ for (const repo in data.contributors) {
 const uniqueContributorsArray = [...uniqueContributors.values()];
 
 console.log(uniqueContributors);
+console.log(data)
 
 export const TeamMember = ({ src, name }) => {
   return (
