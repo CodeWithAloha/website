@@ -21,7 +21,7 @@ for (const repo in data.contributors) {
   for (const contributor of repoContributors) {
     const name = contributor.username;
     const avatar = contributor.avatar_url;
-    const url = contributor.url;
+    const url = contributor.html_url;
 
 
     // Check if the username is already in the Map to avoid duplicates
@@ -57,7 +57,9 @@ export const TeamMember = ({ src, name }) => {
       <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
-            <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>{" "}
+<a href={contributor.url}>
+  <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>
+</a>
             <Image  
           src={contributor.avatar} 
           alt={`This is ${contributor.name}'s picture`}
