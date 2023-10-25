@@ -48,7 +48,7 @@ export const TeamMember = ({ src, name }) => {
         <AiOutlineGithub fontSize="2rem" />
         <h2 className="pl-2 text-md xl:text-xl">Contributors:</h2>{" "}
       </div>
-      <ul className="grid grid-cols-3 gap-4 pl-4">
+      <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
             <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>{" "}
@@ -56,8 +56,8 @@ export const TeamMember = ({ src, name }) => {
           src={contributor.avatar} 
           alt={`This is ${contributor.name}'s picture`}
           className={"relative flex-1 flex items-center pb-8 flex-col text-center rounded-sm"}
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           />
           </li>
         ))}
