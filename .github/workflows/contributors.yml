@@ -25,7 +25,7 @@ jobs:
           array=${{env.REPOSITORY_NAMES}}
           for item in ${array[@]}
           do
-            echo "  \"$item\": [" >> contributors.json
+            echo "  \"$item\": " >> contributors.json
           
             contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] | {login: .login, avatar_url: .avatar_url}' | jq -s .)
             for contributor in $contributors
