@@ -34,10 +34,6 @@ for (const repo in data.contributors) {
 // Convert the Map values to an array to get the unique contributors
 const uniqueContributorsArray = [...uniqueContributors.values()];
 
-console.log(uniqueContributors);
-console.log(data)
-
-
 // ! not yet responsive
 
 export const TeamMember = ({ src, name }) => {
@@ -57,8 +53,12 @@ export const TeamMember = ({ src, name }) => {
       <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
-<a target="" href={contributor.url}> 
-  <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>
+<a target="_blank" href={contributor.url}> 
+  <h2 className="pl-2 py-2 text-md xl:text-xl hover:text-cyan-400 hover:underline">{contributor.name}</h2>
+
+                                            {/* Below is a bolder username design */}
+  {/* <h2 className="pl-2 py-2 text-md xl:text-xl bg-gradient-to-tr from-orange-400 to bg-yellow-200  hover:underline">{contributor.name}</h2> */}
+
 </a>
             <Image  
           src={contributor.avatar} 
