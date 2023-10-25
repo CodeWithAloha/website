@@ -23,7 +23,6 @@ for (const repo in data.contributors) {
     const avatar = contributor.avatar_url;
     const url = contributor.url;
 
-
     // Check if the username is already in the Map to avoid duplicates
     if (!uniqueContributors.has(name)) {
       uniqueContributors.set(name, { name, avatar, url });
@@ -53,20 +52,23 @@ export const TeamMember = ({ src, name }) => {
       <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
-<a target="_blank" href={contributor.url}> 
-  <h2 className="pl-2 py-2 text-md xl:text-xl hover:text-cyan-400 hover:underline">{contributor.name}</h2>
+            <a target="_blank" href={contributor.url}>
+              <h2 className="pl-2 py-2 text-md xl:text-xl hover:text-cyan-400 hover:underline">
+                {contributor.name}
+              </h2>
 
-                                            {/* Below is a bolder username design */}
-  {/* <h2 className="pl-2 py-2 text-md xl:text-xl bg-gradient-to-tr from-orange-400 to bg-yellow-200  hover:underline">{contributor.name}</h2> */}
-
-</a>
-            <Image  
-          src={contributor.avatar} 
-          alt={`This is ${contributor.name}'s picture`}
-          className={"relative flex-1 flex items-center pb-8 flex-col text-center rounded-sm"}
-          width={200}
-          height={200}
-          />
+              {/* Below is a bolder username design */}
+              {/* <h2 className="pl-2 py-2 text-md xl:text-xl bg-gradient-to-tr from-orange-400 to bg-yellow-200  hover:underline">{contributor.name}</h2> */}
+            </a>
+            <Image
+              src={contributor.avatar}
+              alt={`This is ${contributor.name}'s picture`}
+              className={
+                "relative flex-1 flex items-center pb-8 flex-col text-center rounded-sm"
+              }
+              width={200}
+              height={200}
+            />
           </li>
         ))}
       </ul>
