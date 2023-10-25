@@ -46,7 +46,7 @@ export const TeamMember = ({ src, name }) => {
 
       <div className="flex flex-row items-center justify-center py-2">
         <AiOutlineGithub fontSize="2rem" />
-        <h2 className="pl-2 text-md xl:text-xl">Contributors:</h2>{" "}
+        <h2 className="pl-2 py-8 text-md xl:text-xl">Contributors:</h2>{" "}
       </div>
       <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
