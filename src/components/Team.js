@@ -21,7 +21,7 @@ for (const repo in data.contributors) {
   for (const contributor of repoContributors) {
     const name = contributor.username;
     const avatar = contributor.avatar_url;
-    const url = contributor.html_url;
+    const url = contributor.url;
 
 
     // Check if the username is already in the Map to avoid duplicates
