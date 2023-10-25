@@ -6,7 +6,7 @@ import data from "contributors.json";
 // Function to filter out dependabot
 function filterContributors(contributors) {
   return contributors.filter(
-    (contributor) => contributor.login !== "dependabot[bot]",
+    (contributor) => contributor.username !== "dependabot[bot]",
   );
 }
 
