@@ -3,23 +3,36 @@ import Image from "next/image";
 import { AiOutlineMail, AiOutlineGithub } from "react-icons/ai";
 import data from "contributors.json";
 
-const uniqueNames = []; // to avoid duplicates and bot names
+// Function to filter out dependabot
+function filterContributors(contributors) {
+  return contributors.filter(
+    (contributor) => contributor.login !== "dependabot[bot]",
+  );
+}
+
+// Create a Map to store unique contributors with the username as the key
+const uniqueContributors = new Map();
 
 // Loop through the each Repo
-for (const repos in data.contributors) {
-  // Loop through the each Repo's contributors and add all to a list
-  const repoContributors = data.contributors[repos];
+for (const repo in data.contributors) {
+  const repoContributors = filterContributors(data.contributors[repo]);
 
-  // Loop through the all of the contrubtors to grab each individual contributor
+  // Loop through the filtered contributors to grab each individual contributor
   for (const contributor of repoContributors) {
-    const name = contributor.name;
+    const name = contributor.login;
+    const avatar = contributor.avatar_url;
 
-    // Check if the name is not already in the uniqueNames array as well as the dependabot[bot]
-    if (!uniqueNames.includes(name) && name !== "dependabot[bot]") {
-      uniqueNames.push(name + "\n");
+    // Check if the username is already in the Map to avoid duplicates
+    if (!uniqueContributors.has(name)) {
+      uniqueContributors.set(name, { name, avatar });
     }
   }
 }
+
+// Convert the Map values to an array to get the unique contributors
+const uniqueContributorsArray = [...uniqueContributors.values()];
+
+console.log(uniqueContributors);
 
 export const TeamMember = ({ src, name }) => {
   return (
@@ -35,15 +48,21 @@ export const TeamMember = ({ src, name }) => {
         <AiOutlineGithub fontSize="2rem" />
         <h2 className="pl-2 text-md xl:text-xl">Contributors:</h2>{" "}
       </div>
-      <div>
-        <ul className="grid grid-cols-3 gap-4 pl-4">
-          {uniqueNames.map((name, index) => (
-            /* added hover and mouse pointer classes as an option below for each individual contributor */
-            // <li className="hover:scale-105 cursor-pointer" key={index}>{name}</li>
-            <li key={index}>{name}</li>
-          ))}
-        </ul>
-      </div>
+      <ul className="grid grid-cols-3 gap-4 pl-4">
+        {uniqueContributorsArray.map((contributor, index) => (
+          <li key={index}>
+            <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>{" "}
+            <Image  
+          src={contributor.avatar} 
+          alt={`This is ${contributor.name}'s picture`}
+          className={"relative flex-1 flex items-center pb-8 flex-col text-center rounded-sm"}
+          width={300}
+          height={300}
+          />
+          </li>
+        ))}
+      </ul>
+      <div></div>
       {/* <p className="text-md xl:text-xl font-semibold leading-tight">{uniqueNames}</p> */}
     </div>
   );
