@@ -57,7 +57,7 @@ export const TeamMember = ({ src, name }) => {
       <ul className="grid grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
-<a href={contributor.url}>
+<a target="" href={contributor.url}> 
   <h2 className="pl-2 text-md xl:text-xl">{contributor.name}</h2>
 </a>
             <Image  
