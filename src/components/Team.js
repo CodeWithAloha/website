@@ -37,6 +37,9 @@ const uniqueContributorsArray = [...uniqueContributors.values()];
 console.log(uniqueContributors);
 console.log(data)
 
+
+// ! not yet responsive
+
 export const TeamMember = ({ src, name }) => {
   return (
     <div className="flex flex-col justify-center m-8 text-center">
