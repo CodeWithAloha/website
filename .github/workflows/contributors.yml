@@ -1,0 +1,51 @@
+name: Credit the contributors
+
+on:
+  push: {}
+  workflow_dispatch: {}
+
+env:
+  ORGANIZATION_NAME: "CodeWithAloha"
+  REPOSITORY_NAMES: |
+    (
+      "Hawaii-Zoning-Atlas"
+      "HIERR"
+      "CWAWebsite"
+    )
+jobs:
+  gather-the-contributors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      # For every contributor to the 'CodeWithAloha' organization, add them to the contributors.json file
+      - name: Query for all contributors for all repositories
+        run: |
+          echo "{\"contributors\": {" > contributors.json
+          array=${{env.REPOSITORY_NAMES}}
+          for item in ${array[@]}
+          do
+            echo "  \"$item\": " >> contributors.json
+
+            contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] | {username: .login, avatar_url: .avatar_url, url: .html_url }' | jq -s .)
+            for contributor in $contributors
+            do
+
+              echo $contributor >> contributors.json
+              # "  {\"name\": \"$contributor\"},"
+
+            done
+            sed -i '$ s/.$//' contributors.json
+            echo "  ]," >> contributors.json
+          done
+          sed -i '$ s/.$//' contributors.json
+          echo "}}" >> contributors.json
+
+          cat contributors.json
+      - name: Commit the contributors
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add contributors.json
+          git commit -m "Update contributors.json"
+          git push
