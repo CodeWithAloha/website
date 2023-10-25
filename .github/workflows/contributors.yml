@@ -4,7 +4,7 @@ on:
   push: {}
   workflow_dispatch: {}
 
-env: 
+env:
   ORGANIZATION_NAME: "CodeWithAloha"
   REPOSITORY_NAMES: |
     (
@@ -26,7 +26,7 @@ jobs:
           for item in ${array[@]}
           do
             echo "  \"$item\": " >> contributors.json
-          
+
             contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] | {login: .login, avatar_url: .avatar_url}' | jq -s .)
             for contributor in $contributors
             do
@@ -40,7 +40,7 @@ jobs:
           done
           sed -i '$ s/.$//' contributors.json
           echo "}}" >> contributors.json
-          
+
           cat contributors.json
       - name: Commit the contributors
         run: |
