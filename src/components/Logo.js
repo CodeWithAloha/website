@@ -9,9 +9,9 @@ const Logo = () => {
       <Image
         alt="Code with Aloha logo"
         src={logoImg}
-        width={500}
-        height={500}
-        className="w-full xl:max-h-24 max-h-[3rem] cursor-pointer m-2 hover:animate-pulse"
+        width={96}
+        height={96}
+        className="cursor-pointer hover:animate-pulse"
       />
     </Link>
   );
