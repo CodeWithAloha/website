@@ -60,6 +60,8 @@ const NavBar = () => {
       </div>
 
       {/* ____________________mobile menu______________________________ */}
+
+      {/* Main Error 1 / 3 */}
       <button
         className="flex flex-col justify-center items-center lg:hidden z-50"
         onClick={handleClick}
