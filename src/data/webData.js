@@ -141,6 +141,8 @@ const data = {
       width: 500,
       height: 500,
       className: "h-full  w-1/3 lg:w-1/4 ",
+      hasWebsite: true,
+      url: "https://hawaiizoningatlas.com/",
     },
     {
       id: 2,
@@ -149,6 +151,8 @@ const data = {
       width: 500,
       height: 500,
       className: "h-full w-1/3 lg:w-1/4 ",
+      hasWebsite: true,
+      url: "https://www.civilbeatlawcenter.org/",
     },
   ],
   focus: [
