@@ -1,13 +1,9 @@
 name: Credit the contributors
 
 on:
-  push:
-    branches:
-      - monthly-contribtors-update
-# on:
-#   workflow_dispatch: {}
-#   schedule:
-#     - cron: "0 0 1 * *"
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 0 1 * *"
 
 env:
   ORGANIZATION_NAME: "CodeWithAloha"
