@@ -15,9 +15,12 @@ const Footer = () => {
 
         <h2 className="pl-2 text-md xl:text-xl">
           Email:
-          <span className="text-md xl:text-xl  px-2">
+          <a
+            href="mailto:codewithaloha@gmail.com"
+            className="text-md xl:text-xl px-2"
+          >
             codewithaloha@gmail.com
-          </span>{" "}
+          </a>
         </h2>
       </div>
 

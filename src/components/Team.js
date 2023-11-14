@@ -99,7 +99,9 @@ const Team = () => {
         <AiOutlineMail fontSize="2rem" />
         <h2 className="pl-2 text-md xl:text-xl">Email:</h2>{" "}
       </div>
-      <h2 className="text-md xl:text-xl px-2">codewithaloha@gmail.com</h2>{" "}
+      <h2 className="text-md xl:text-xl px-2">
+        <a href="mailto:codewithaloha@gmail.com">codewithaloha@gmail.com</a>
+      </h2>
     </>
   );
 };
