@@ -54,3 +54,4 @@ jobs:
         with:
           commit-message: "[bot] Update contributors.json"
           title: "[bot] Update contributors.json"
+          branch: "update-contributors-json-bot"
