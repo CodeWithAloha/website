@@ -1,8 +1,9 @@
 name: Credit the contributors
 
 on:
-  push: {}
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 0 1 * *"
 
 env:
   ORGANIZATION_NAME: "CodeWithAloha"
@@ -42,10 +43,15 @@ jobs:
           echo "}}" >> contributors.json
 
           cat contributors.json
-      - name: Commit the contributors
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add contributors.json
-          git commit -m "Update contributors.json"
-          git push
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - run: npm ci
+      - run: npm run lint
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "[bot] Update contributors.json"
+          title: "[bot] Update contributors.json"
+          branch: "update-contributors-json-bot"
