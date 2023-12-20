@@ -43,7 +43,7 @@ export const ProjectCard = ({
           width={300}
           height={300}
         />
-        <h5 className="font-semibold text-3xl py-6">{title} </h5>
+        <h3 className="font-semibold text-3xl py-6">{title} </h3>
         <p className=" w-3/5  text-md xl:text-xl">{text}</p>
       </div>
 
