@@ -24,12 +24,12 @@ const HomePage = () => {
           className="flex flex-col text-right justify-center items-center lg:items-start scale-[90%]
          2xl:scale-100  px-4  xl:pl-20 "
         >
-          <h4
+          <h1
             className="font-satisfy text-4xl lg:text-5xl bg-clip-text text-transparent
         bg-gradient-to-r from-red-500 to-yellow-400 pb-6"
           >
             Welina Mai !
-          </h4>
+          </h1>
           {/* <h2 className="font-montserat lg:text-4xl text-xl font-semibold py-6 whitespace-nowrap">
             Hawaiʻi Civic Tech
           </h2> */}
