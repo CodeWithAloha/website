@@ -23,9 +23,9 @@ const TextBlock = ({
         className="h-100 xl:p-10 pt-20"
       />
       <div className="max-w-lg">
-        <h4 className="xl:text-5xl text-3xl font-semibold mb-10 text-center font-satisfy">
+        <h3 className="xl:text-5xl text-3xl font-semibold mb-10 text-center font-satisfy">
           {title}
-        </h4>
+        </h3>
         <p className="text-md xl:text-xl">{text}</p>
       </div>
     </div>
