@@ -61,7 +61,6 @@ const NavBar = () => {
 
       {/* ____________________mobile menu______________________________ */}
 
-      {/* Wave error 1/3 fix: gave button text a value */}
       <button
         aria-label='menu'
         className="flex flex-col justify-center items-center lg:hidden z-50"
