@@ -12,12 +12,12 @@ const TextBlock = ({ src, width, height, title, text }) => {
         height={height}
         className="h-12 w-12"
       />
-      <h5
+      <h3
         className="font-extrabold py-8 text-transparent lg:text-3xl text-xl
           font-montserat bg-clip-text bg-gradient-to-r from-red-400 to-yellow-400"
       >
         {title}
-      </h5>
+      </h3>
       <p className="text-md xl:text-xl">{text}</p>
     </div>
   );
@@ -34,9 +34,9 @@ const WhatToExpect = () => {
       className=" flex flex-col items-center justify-center
            mt-40 text-center rounded-lg mx-10 pt-10 pb-[20rem]"
     >
-      <h4 className=" text-4xl lg:text-6xl font-semibold font-satisfy  text-center py-20 ">
+      <h2 className=" text-4xl lg:text-6xl font-semibold font-satisfy  text-center py-20 ">
         What to expect at a meeting{" "}
-      </h4>
+      </h2>
 
       <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
         {expectations.map((expect) => (
