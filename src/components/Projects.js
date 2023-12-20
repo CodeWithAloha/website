@@ -38,7 +38,7 @@ export const ProjectCard = ({
       >
         <Image
           src={src}
-          alt={`This is a picture of the ${title} project`} 
+          alt={`This is a picture of the ${title} project`}
           className={`${className} rounded-sm mb-2`}
           width={300}
           height={300}
@@ -107,7 +107,7 @@ export const ProjectCard = ({
 
             <Image
               src={src}
-              alt={title} 
+              alt={title}
               className={`${className} w-auto h-[160px] md:h-[200px] rounded-sm mb-2 2xl:h-[300px]`}
               width={500}
               height={500}
