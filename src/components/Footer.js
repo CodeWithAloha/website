@@ -31,6 +31,7 @@ const Footer = () => {
           <BsGithub fontSize={40} />
         </a>
         <a
+          id="join"
           aria-label="A link to the Code with Aloha Meetup Page"
           href="https://www.meetup.com/code-for-hawaii/"
           className="hover:scale-105"
