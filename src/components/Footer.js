@@ -6,19 +6,19 @@ import { FaMeetup } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="w-full bg-gradient-to-b from-yellow-300 to-orange-400">
-      <h4 className="text-center xl:text-4xl text-3xl  pt-10 font-thin">
+      <h2 className="text-center xl:text-4xl text-3xl  pt-10 font-thin">
         Contact us
-      </h4>
+      </h2>
 
       <div className="flex flex-row items-center justify-center py-4">
         <AiOutlineMail fontSize="2rem" />
 
-        <h2 className="pl-2 text-md xl:text-xl">
+        <p className="pl-2 text-md xl:text-xl">
           Email:
           <span className="text-md xl:text-xl  px-2">
             codewithaloha@gmail.com
           </span>{" "}
-        </h2>
+        </p>
       </div>
 
       <div className="flex items-center justify-center gap-10  px-20 py-4 text-xl text-center">
