@@ -23,6 +23,7 @@ const Footer = () => {
 
       <div className="flex items-center justify-center gap-10  px-20 py-4 text-xl text-center">
         <a
+          aria-label="A link to the Code with Aloha Github"
           href="https://github.com/CodeWithAloha"
           target="_blank"
           className="hover:scale-105"
@@ -30,6 +31,7 @@ const Footer = () => {
           <BsGithub fontSize={40} />
         </a>
         <a
+          aria-label="A link to the Code with Aloha Meetup Page"
           href="https://www.meetup.com/code-for-hawaii/"
           className="hover:scale-105"
           target="_blank"

@@ -62,7 +62,7 @@ const NavBar = () => {
       {/* ____________________mobile menu______________________________ */}
 
       <button
-        aria-label='menu'
+        aria-label="menu"
         className="flex flex-col justify-center items-center lg:hidden z-50"
         onClick={handleClick}
       >
