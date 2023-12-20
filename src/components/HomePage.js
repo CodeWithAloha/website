@@ -33,15 +33,15 @@ const HomePage = () => {
           {/* <h2 className="font-montserat lg:text-4xl text-xl font-semibold py-6 whitespace-nowrap">
             Hawaiʻi Civic Tech
           </h2> */}
-          <h3 className="text-[0.8rem] sm:text-sm md:text-md lg:text-lg xl:text-xl pb-5 font-semibold  lg:text-left text-center ">
+          <strong className="text-[0.8rem] sm:text-sm md:text-md lg:text-lg xl:text-xl pb-5 font-semibold  lg:text-left text-center ">
             We are a civic-minded volunteers team, interested in using
             technology <br />
             and open data to make our local communities better.
-          </h3>
+          </strong>
 
-          <h4 className="text-[0.8rem] md:text-md xl:text-xl">
+          <p className="text-[0.8rem] md:text-md xl:text-xl">
             Please feel free to join us!{" "}
-          </h4>
+          </p>
           <p className="text-[0.8rem] md:text-md xl:text-xl">
             No coding experience required
           </p>
