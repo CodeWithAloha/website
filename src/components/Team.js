@@ -49,7 +49,7 @@ export const TeamMember = ({ src, name }) => {
         <AiOutlineGithub fontSize="2rem" />
         <h2 className="pl-2 py-8 text-md xl:text-xl">Contributors:</h2>{" "}
       </div>
-      <ul className="grid grid-cols-6 gap-4 pl-4">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
           <li key={index}>
             <a target="_blank" href={contributor.url}>
