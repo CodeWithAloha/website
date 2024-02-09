@@ -3,15 +3,18 @@ name: Credit the contributors
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "0 0 1 * *" # Run at midnight on the first of every month
 
 env:
   ORGANIZATION_NAME: "CodeWithAloha"
+  # This is a list of repositories that you want to gather contributors from
+  # To add a new repository, add a new line with the repository name in quotes
   REPOSITORY_NAMES: |
     (
       "Hawaii-Zoning-Atlas"
       "HIERR"
-      "CWAWebsite"
+      "website"
+      "uipa"
     )
 jobs:
   gather-the-contributors:
@@ -29,14 +32,23 @@ jobs:
             echo "  \"$item\": " >> contributors.json
 
             contributors=$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/contributors | jq -r '.[] | {username: .login, avatar_url: .avatar_url, url: .html_url }' | jq -s .)
-            for contributor in $contributors
-            do
+            collaborators=$(curl -s -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${{ secrets.CWA_BOT_TOKEN }}" -H "X-GitHub-Api-Version: 2022-11-28" "https://api.github.com/repos/${{ env.ORGANIZATION_NAME }}/$item/collaborators?per_page=100" | jq -r '.[].login')
+            
+            echo $contributors > copy_contributors.json
 
-              echo $contributor >> contributors.json
-              # "  {\"name\": \"$contributor\"},"
-
+            # Filter for only the contributors that are also collaborators
+            jq -c '.[]' copy_contributors.json | while read i; do
+              username=$(echo $i | jq -r '.username')
+              if [[ " ${collaborators[@]} " =~ "${username}" ]]; then
+                echo $i | jq -c . >> filtered_contributors.json
+              fi
             done
+
+            echo $(jq -s . filtered_contributors.json) >> contributors.json
+
             sed -i '$ s/.$//' contributors.json
+            rm copy_contributors.json
+            rm filtered_contributors.json
             echo "  ]," >> contributors.json
           done
           sed -i '$ s/.$//' contributors.json

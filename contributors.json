@@ -22,11 +22,6 @@
         "url": "https://github.com/operator130"
       },
       {
-        "username": "ilyankou",
-        "avatar_url": "https://avatars.githubusercontent.com/u/10443203?v=4",
-        "url": "https://github.com/ilyankou"
-      },
-      {
         "username": "TyPushesButtons",
         "avatar_url": "https://avatars.githubusercontent.com/u/124652716?v=4",
         "url": "https://github.com/TyPushesButtons"
@@ -89,9 +84,9 @@
         "url": "https://github.com/dinoboy197"
       },
       {
-        "username": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-        "url": "https://github.com/apps/dependabot"
+        "username": "MichaelTamaki",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13753033?v=4",
+        "url": "https://github.com/MichaelTamaki"
       },
       {
         "username": "MichaelTamaki",
@@ -129,7 +124,7 @@
         "url": "https://github.com/lprimiano"
       }
     ],
-    "CWAWebsite": [
+    "website": [
       {
         "username": "kobebuckley",
         "avatar_url": "https://avatars.githubusercontent.com/u/42805189?v=4",
@@ -141,19 +136,14 @@
         "url": "https://github.com/Alexandra-Haynes"
       },
       {
-        "username": "github-actions[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-        "url": "https://github.com/apps/github-actions"
-      },
-      {
         "username": "MichaelTamaki",
         "avatar_url": "https://avatars.githubusercontent.com/u/13753033?v=4",
         "url": "https://github.com/MichaelTamaki"
       },
       {
-        "username": "sarafurd",
-        "avatar_url": "https://avatars.githubusercontent.com/u/67877801?v=4",
-        "url": "https://github.com/sarafurd"
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
       },
       {
         "username": "DerekMalone",
@@ -166,24 +156,36 @@
         "url": "https://github.com/Hooobot"
       },
       {
+        "username": "avenmia",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
+        "url": "https://github.com/avenmia"
+      }
+    ],
+    "uipa": [
+      {
+        "username": "ryankanno",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57014?v=4",
+        "url": "https://github.com/ryankanno"
+      },
+      {
         "username": "tyliec",
         "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
         "url": "https://github.com/tyliec"
       },
       {
-        "username": "AnaBaldinger",
-        "avatar_url": "https://avatars.githubusercontent.com/u/145423118?v=4",
-        "url": "https://github.com/AnaBaldinger"
+        "username": "keokilee",
+        "avatar_url": "https://avatars.githubusercontent.com/u/191770?v=4",
+        "url": "https://github.com/keokilee"
       },
       {
-        "username": "Cozhee",
-        "avatar_url": "https://avatars.githubusercontent.com/u/55909913?v=4",
-        "url": "https://github.com/Cozhee"
+        "username": "knowsuchagency",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11974795?v=4",
+        "url": "https://github.com/knowsuchagency"
       },
       {
-        "username": "avenmia",
-        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
-        "url": "https://github.com/avenmia"
+        "username": "sakamosa",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14817912?v=4",
+        "url": "https://github.com/sakamosa"
       }
     ]
   }
