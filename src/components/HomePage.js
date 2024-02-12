@@ -46,19 +46,17 @@ const HomePage = () => {
             No coding experience required
           </p>
 
-          <div
-            className="flex justify-center items-center  max-w-md rounded-full px-7 my-6 shadow-lg 
-          bg-gradient-to-tr from-orange-400 to bg-yellow-200 hover:scale-105"
-          >
-            <a
+          <a
               href="https://www.meetup.com/code-for-hawaii/"
               target="_blank"
-              className="font-semibold text-md xl:text-xl"
-            >
-              Join a meeting
-            </a>
-            <FaMeetup className="text-4xl m-2 " />
-          </div>
+              className="flex justify-center items-center  max-w-md rounded-full px-7 my-6 shadow-lg
+          bg-gradient-to-tr from-orange-400 to bg-yellow-200 hover:scale-105"
+          >
+              <div className="font-semibold text-md xl:text-xl">
+                  Join a meeting
+              </div>
+              <FaMeetup className="text-4xl m-2 " />
+          </a>
         </div>
       </div>
     </section>
