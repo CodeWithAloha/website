@@ -10,6 +10,7 @@ import projectsImg from "../images/projects.png";
 // import hawaiiZoningAtlasImg from "../images/HawaiiZoningAtlas.png";
 // import hierrImg from "../images/HIERR.png";
 import { getCurrentProjects } from "@/data/webData";
+import Sponsors from "./Sponsors";
 
 export const ProjectCard = ({
   id,
@@ -176,6 +177,7 @@ const Projects = () => {
       </div>
       <HistoricalProjects />
       <Clients />
+      <Sponsors />
     </section>
   );
 };

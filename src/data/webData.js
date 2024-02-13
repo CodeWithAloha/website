@@ -18,6 +18,10 @@ import experienceImg from "../images/experience.png";
 import oneImg from "../images/one.png";
 import twoImg from "../images/two.png";
 import threeImg from "../images/three.png";
+import sponsor1Img from "../images/sponsor1.png";
+import sponsor2Img from "../images/sponsor2.png";
+import sponsor3Img from "../images/sponsor3.png";
+import sponsor4Img from "../images/sponsor4.png";
 
 const data = {
   currentProjects: [
@@ -214,6 +218,48 @@ const data = {
       text: "During each meetup, we facilitate breakout rooms tailored to our projects for targeted discussion and planning. Together in these rooms, we drive innovation and progress, contributing to the growth and betterment of our community. Your insights can make a real difference – let's achieve greatness together!",
     },
   ],
+  sponsors: [
+    {
+      id: 1,
+      alt: "HTDC",
+      src: sponsor1Img,
+      width: 500,
+      height: 500,
+      className: "mx-8 h-full  w-1/6 lg:w-1/8 ",
+      hasWebsite: true,
+      url: "https://www.htdc.org/",
+    },
+    {
+      id: 2,
+      alt: "Box Jelly",
+      src: sponsor2Img,
+      width: 500,
+      height: 500,
+      className: "mx-8 h-full w-1/6 lg:w-1/8 ",
+      hasWebsite: true,
+      url: "https://www.theboxjelly.com/",
+    },
+    {
+      id: 3,
+      alt: "Entrepreneur Sandbox",
+      src: sponsor3Img,
+      width: 500,
+      height: 500,
+      className: "mx-8 h-full  w-1/6 lg:w-1/8 ",
+      hasWebsite: true,
+      url: "https://sandboxhawaii.org/",
+    },
+    {
+      id: 4,
+      alt: "Hub Coworking Hawaii",
+      src: sponsor4Img,
+      width: 500,
+      height: 500,
+      className: "mx-8 h-full w-1/6 lg:w-1/8 ",
+      hasWebsite: true,
+      url: "https://hubcoworkinghi.com/",
+    },
+  ],
 };
 
 export const getCurrentProjects = () => {
@@ -236,4 +282,7 @@ export const getFocus = () => {
 };
 export const getExpectations = () => {
   return structuredClone(data.expectations);
+};
+export const getSponsors = () => {
+  return structuredClone(data.sponsors);
 };
