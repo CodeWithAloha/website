@@ -64,7 +64,7 @@ jobs:
             echo "Collecting contributors for $repository"
             curl -s https://raw.githubusercontent.com/CodeWithAloha/$repository/main/.all-contributorsrc > $repository-contributors.json
 
-            if !jq -e . >/dev/null 2>&1 <<< "$(cat $repository-contributors.json)"; then
+            if ! jq -e . >/dev/null 2>&1 <<< "$(cat $repository-contributors.json)"; then
               echo "No contributors for $repository"
               continue
             fi
