@@ -78,8 +78,9 @@ jobs:
             cat $repository-output.json
 
             jq --argjson newContributors "$(cat $repository-output.json)" \
-            '.contributors["$repository"] |= (. + $newContributors) | 
-            .contributors["$repository"] |= unique_by(.username)' \
+              --arg repo "$repository" \
+            '.contributors[$repo] |= (. + $newContributors) | 
+            .contributors[$repo] |= unique_by(.username)' \
             "contributors.json" > temp.json && mv temp.json "contributors.json"
 
             rm $repository-contributors.json
