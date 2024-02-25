@@ -15,6 +15,7 @@ env:
       "HIERR"
       "website"
       "uipa"
+      "docs"
     )
 jobs:
   gather-the-contributors:
