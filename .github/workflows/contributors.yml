@@ -66,10 +66,11 @@ jobs:
 
             if ! jq -e . >/dev/null 2>&1 <<< "$(cat $repository-contributors.json)"; then
               echo "No contributors for $repository"
+              rm $repository-contributors.json
               continue
             fi
 
-            echo $repository-contributors.json | jq -r '.contributors[] | {username: .login, avatar_url: .avatar_url, url: .profile }' | jq -s . > $repository-contributors.json
+            cat $repository-contributors.json | jq -r '.contributors[] | {username: .login, avatar_url: .avatar_url, url: .profile }' | jq -s . > $repository-contributors.json
             if [ -s $repository-contributors.json ]; then
               echo "Contributors found for $repository"
               cat $repository-contributors.json
