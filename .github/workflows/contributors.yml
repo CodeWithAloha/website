@@ -55,6 +55,40 @@ jobs:
           echo "}}" >> contributors.json
 
           cat contributors.json
+
+      - name: Collect all the contributors from allcontributors files
+        run: |
+          repositories=${{env.REPOSITORY_NAMES}}
+          for repository in ${repositories[@]}
+          do
+            echo "Collecting contributors for $repository"
+            curl -s https://raw.githubusercontent.com/CodeWithAloha/$repository/main/.all-contributorsrc > $repository-contributors.json
+
+            cat $repository-contributors.json
+
+            if ! jq -e . >/dev/null 2>&1 <<< "$(cat $repository-contributors.json)"; then
+              echo "No contributors for $repository, or .all-contributorsrc is not valid JSON"
+              rm $repository-contributors.json
+              continue
+            fi
+
+            cat $repository-contributors.json | jq -r '.contributors[] | {username: .login, avatar_url: .avatar_url, url: .profile }' | jq -s . > $repository-output.json
+            
+            echo "Contributors found for $repository"
+            cat $repository-output.json
+
+            jq --argjson newContributors "$(cat $repository-output.json)" \
+              --arg repo "$repository" \
+            '.contributors[$repo] |= (. + $newContributors) | 
+            .contributors[$repo] |= unique_by(.username)' \
+            "contributors.json" > temp.json && mv temp.json "contributors.json"
+
+            rm $repository-contributors.json
+            rm $repository-output.json
+
+          done
+
+          cat contributors.json
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
