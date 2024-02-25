@@ -72,20 +72,18 @@ jobs:
               continue
             fi
 
-            cat $repository-contributors.json | jq -r '.contributors[] | {username: .login, avatar_url: .avatar_url, url: .profile }' | jq -s . > $repository-contributors.json
-            if [ -s $repository-contributors.json ]; then
-              echo "Contributors found for $repository"
-              cat $repository-contributors.json
+            cat $repository-contributors.json | jq -r '.contributors[] | {username: .login, avatar_url: .avatar_url, url: .profile }' | jq -s . > $repository-output.json
+            
+            echo "Contributors found for $repository"
+            cat $repository-output.json
 
-              jq --argjson newContributors "$(cat $repository-contributors.json)" \
-              '.contributors["$repository"] |= (. + $newContributors) | 
-              .contributors["$repository"] |= unique_by(.username)' \
-              "contributors.json" > temp.json && mv temp.json "contributors.json"
+            jq --argjson newContributors "$(cat $repository-output.json)" \
+            '.contributors["$repository"] |= (. + $newContributors) | 
+            .contributors["$repository"] |= unique_by(.username)' \
+            "contributors.json" > temp.json && mv temp.json "contributors.json"
 
-              rm $repository-contributors.json
-            else
-              echo "No contributors for $repository"
-            fi
+            rm $repository-contributors.json
+            rm $repository-output.json
 
           done
 
