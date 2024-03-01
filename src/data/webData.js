@@ -98,7 +98,7 @@ const data = {
       src: timeline2Img,
       date: "2011",
       title: "First Civic App Released",
-      text: "We made it offical and released our first app aimed to help and improve our community.",
+      text: "Code for Hawaii became official and released its first app aimed to help and improve the community.",
     },
 
     {

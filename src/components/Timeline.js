@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import TimelineIcon from "./TimelineIcon";
 import { getTimeline } from "@/data/webData";
+import { HistoricalLinks } from "./HistoricalLinks";
 // import timeline1Img from "../images/timeline-1.jpg";
 // import timeline2Img from "../images/timeline-2.jpg";
 // import timeline3Img from "../images/timeline-3.jpg";
@@ -79,6 +80,7 @@ const Timeline = () => {
               />
             ))}
           </ul>
+          <HistoricalLinks />
         </div>
       </div>
     </section>
