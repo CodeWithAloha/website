@@ -22,14 +22,34 @@
         "url": "https://github.com/airyclam"
       },
       {
+        "username": "ameliadklaborte",
+        "avatar_url": "https://robohash.org/ameliadklaborte",
+        "url": "https://www.linkedin.com/in/ameliadklaborte/"
+      },
+      {
         "username": "avenmia",
         "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
         "url": "https://github.com/avenmia"
       },
       {
+        "username": "devon-chodzin",
+        "avatar_url": "https://robohash.org/devon-chodzin",
+        "url": "https://www.linkedin.com/in/devon-chodzin/"
+      },
+      {
         "username": "ggordn3r",
         "avatar_url": "https://avatars.githubusercontent.com/u/10144772?v=4",
         "url": "https://github.com/ggordn3r"
+      },
+      {
+        "username": "heykylo",
+        "avatar_url": "https://robohash.org/heykylo",
+        "url": "https://www.linkedin.com/in/heykylo/"
+      },
+      {
+        "username": "james~dingwall",
+        "avatar_url": "https://robohash.org/james~dingwall",
+        "url": "https://www.linkedin.com/in/james~dingwall/"
       },
       {
         "username": "jonathanswilcox",
@@ -55,6 +75,16 @@
         "username": "kobebuckley",
         "avatar_url": "https://avatars.githubusercontent.com/u/42805189?v=4",
         "url": "https://github.com/kobebuckley"
+      },
+      {
+        "username": "locallygoverned",
+        "avatar_url": "https://robohash.org/locallygoverned",
+        "url": "https://www.linkedin.com/in/locallygoverned/"
+      },
+      {
+        "username": "luanyleone",
+        "avatar_url": "https://robohash.org/luanyleone",
+        "url": "https://www.linkedin.com/in/luanyleone/"
       },
       {
         "username": "operator130",
@@ -206,6 +236,23 @@
         "username": "sakamosa",
         "avatar_url": "https://avatars.githubusercontent.com/u/14817912?v=4",
         "url": "https://github.com/sakamosa"
+      }
+    ],
+    "docs": [
+      {
+        "username": "avenmia",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
+        "url": "https://github.com/avenmia"
+      },
+      {
+        "username": "bentut",
+        "avatar_url": "https://avatars.githubusercontent.com/u/152147?v=4",
+        "url": "https://github.com/bentut"
+      },
+      {
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
       }
     ]
   }
