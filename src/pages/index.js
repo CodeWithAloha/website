@@ -22,7 +22,7 @@ export default function Home() {
       </main>
       <footer>
         <Footer />
-      </footer>
+      </footer> 
     </>
   );
 }
