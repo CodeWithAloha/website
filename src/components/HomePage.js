@@ -3,6 +3,9 @@ import Image from "next/image";
 import { FaMeetup } from "react-icons/fa";
 import NavBar from "./NavBar";
 import heroImg from "../images/hero-image.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const HomePage = () => {
   return (
@@ -16,6 +19,7 @@ const HomePage = () => {
             width={1300}
             height={1300}
             className="w-full max-w-[900px] animate-float"
+            data-aos="fade-right"
           />
           <div className="w-1/3 h-4 mt-12 rounded-full blur-2xl bg-gradient-to-t bg-black"></div>
         </div>
@@ -27,6 +31,7 @@ const HomePage = () => {
           <h4
             className="font-satisfy text-4xl lg:text-5xl bg-clip-text text-transparent
         bg-gradient-to-r from-red-500 to-yellow-400 pb-6"
+        
           >
             Welina Mai !
           </h4>

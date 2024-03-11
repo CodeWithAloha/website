@@ -41,16 +41,17 @@ const OurFocus = () => {
 
   return (
     <>
-      <div className="  bg-white/20 text-center rounded-lg shadow-xl pt-10 pb-20 mt-24">
-        <h2
+    <h2
           className=" xl:text-7xl py-8   text-center text-transparent  text-4xl  bg-clip-text 
           bg-gradient-to-r from-yellow-400 to-red-600"
         >
           {" "}
           Our focus{" "}
         </h2>
-
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 pl-4">
+          
         {focus.map((topic) => (
+          <div className="bg-white/20 text-center rounded-lg shadow-xl pt-10 pb-20 mt-24" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
           <TextBlock
             key={topic.id}
             src={topic.src}
@@ -59,10 +60,12 @@ const OurFocus = () => {
             height={topic.height}
             title={topic.title}
             text={topic.text}
+            data-aos-delay="2000"
           />
+          </div>
         ))}
-      </div>
-    </>
+        </ul>
+      </>
   );
 };
 

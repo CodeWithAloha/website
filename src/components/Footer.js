@@ -1,53 +1,46 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import { FaMeetup } from "react-icons/fa";
+import Logo from "./Logo";
+import Image from "next/image";
+import Link from "next/link";
+import github from "../images/github.svg"
+import meetup from "../images/meetup.svg";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gradient-to-b from-yellow-300 to-orange-400">
-      <h4 className="text-center xl:text-4xl text-3xl  pt-10 font-thin">
-        Contact us
-      </h4>
-
-      <div className="flex flex-row items-center justify-center py-4">
-        <AiOutlineMail fontSize="2rem" />
-
-        <h2 className="pl-2 text-md xl:text-xl">
-          Email:
-          <a
-            href="mailto:codewithaloha@gmail.com"
-            className="text-md xl:text-xl px-2"
-          >
-            codewithaloha@gmail.com
-          </a>
-        </h2>
+<div className="footer-section w-1000 bg-gradient-to-tr from-orange-400 to bg-yellow-200 m-8 pb-5">
+  <footer id="footer">
+    <div className="col col1">
+      <center>
+      <Logo className="footer-logo" />
+      </center>
+      <div className="social mt-5 ml-6">
+      <Link href="https://github.com/CodeWithAloha" whilehover={{ scale: 1.5 }}>
+      <Image
+        alt="Code with Aloha logo"
+        src={github}
+        width={70}
+        height={70}
+        className="cursor-pointer hover:animate-pulse"
+      />
+    </Link>
+    <Link href="https://www.meetup.com/code-for-hawaii/" whilehover={{ scale: 1.5 }}>
+      <Image 
+        alt="Code with Aloha logo"
+        src={meetup}
+        width={70}
+        height={70}
+        className="cursor-pointer hover:animate-pulse"
+      />
+    </Link>
       </div>
-
-      <div className="flex items-center justify-center gap-10  px-20 py-4 text-xl text-center">
-        <a
-          href="https://github.com/CodeWithAloha"
-          target="_blank"
-          className="hover:scale-105"
-        >
-          <BsGithub fontSize={40} />
-        </a>
-        <a
-          href="https://www.meetup.com/code-for-hawaii/"
-          className="hover:scale-105"
-          target="_blank"
-        >
-          <FaMeetup fontSize={46} />
-        </a>
-      </div>
-      <div className="flex items-center gap-10  justify-center  py-6 text-md xl:text-xl text-center">
-        <p>Privacy Policy</p>
-        <p>Terms of Use</p>
-      </div>
-      <p className="text-md xl:text-xl font-semibold text-center py-6">
-        Copyright © Code With Aloha 2023
+      <p className="copyright text-center mt-4" style={{ color: "#000", fontSize: "smaller" }}>
+        2024 © All Rights Reserved
       </p>
-    </footer>
+    </div>
+   
+    <div className="backdrop" />
+  </footer>
+</div>
   );
 };
 

@@ -38,7 +38,7 @@ const WhatToExpect = () => {
         What to expect at a meeting{" "}
       </h4>
 
-      <div className="flex gap-10 flex-col xl:flex-row lg:pb-40 ">
+      <div className="flex gap-10 flex-col xl:flex-row">
         {expectations.map((expect) => (
           <TextBlock
             key={expect.id}
