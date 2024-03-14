@@ -53,7 +53,7 @@ const NavBar = () => {
           <CustomLink
             href="https://www.meetup.com/Code-for-Hawaii/events/"
             target="_blank"
-            className="font-satisfy text-5xl lowercase"
+            className="font-satisfy ml-8 lowercase join"
             title="Join us!"
           />
         </nav>
@@ -98,7 +98,7 @@ const NavBar = () => {
             <MobileCustomLink
               href="https://www.meetup.com/Code-for-Hawaii/events/"
               target="_blank"
-              className=" font-normal font-satisfy  text-2xl lg:text-5xl lowercase"
+              className="font-normal font-satisfy  text-2xl lg:text-5xl lowercase join"
               title="Join us!"
               toggle={handleClick}
             />

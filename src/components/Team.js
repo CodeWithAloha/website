@@ -51,8 +51,17 @@ export const TeamMember = ({ src, name }) => {
       </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 pl-4">
         {uniqueContributorsArray.map((contributor, index) => (
-          <li key={index}>
-            <a target="_blank" href={contributor.url}>
+          <li className="contributor-card mb-4" data-aos="fade-up" data-aos-delay="100" key={index}>
+            <Image
+              src={contributor.avatar}
+              alt={`This is ${contributor.name}'s picture`}
+              className={
+                "contributor-img relative flex-1 flex items-center mb-4 flex-col text-center rounded-sm"
+              }
+              width={200}
+              height={200}
+            />
+            <a target="_blank" href={contributor.url} className="">
               <h2 className="pl-2 py-2 text-md xl:text-xl hover:text-cyan-400 hover:underline">
                 {contributor.name}
               </h2>
@@ -60,15 +69,6 @@ export const TeamMember = ({ src, name }) => {
               {/* Below is a bolder username design */}
               {/* <h2 className="pl-2 py-2 text-md xl:text-xl bg-gradient-to-tr from-orange-400 to bg-yellow-200  hover:underline">{contributor.name}</h2> */}
             </a>
-            <Image
-              src={contributor.avatar}
-              alt={`This is ${contributor.name}'s picture`}
-              className={
-                "relative flex-1 flex items-center pb-8 flex-col text-center rounded-sm"
-              }
-              width={200}
-              height={200}
-            />
           </li>
         ))}
       </ul>
