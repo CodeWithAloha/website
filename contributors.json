@@ -104,44 +104,9 @@
     ],
     "HIERR": [
       {
-        "username": "avenmia",
-        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
-        "url": "https://github.com/avenmia"
-      },
-      {
-        "username": "tyliec",
-        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
-        "url": "https://github.com/tyliec"
-      },
-      {
-        "username": "lsollis",
-        "avatar_url": "https://avatars.githubusercontent.com/u/92566497?v=4",
-        "url": "https://github.com/lsollis"
-      },
-      {
-        "username": "franciscocha",
-        "avatar_url": "https://avatars.githubusercontent.com/u/23488684?v=4",
-        "url": "https://github.com/franciscocha"
-      },
-      {
-        "username": "kmal808",
-        "avatar_url": "https://avatars.githubusercontent.com/u/20919083?v=4",
-        "url": "https://github.com/kmal808"
-      },
-      {
-        "username": "dinoboy197",
-        "avatar_url": "https://avatars.githubusercontent.com/u/631178?v=4",
-        "url": "https://github.com/dinoboy197"
-      },
-      {
-        "username": "MichaelTamaki",
-        "avatar_url": "https://avatars.githubusercontent.com/u/13753033?v=4",
-        "url": "https://github.com/MichaelTamaki"
-      },
-      {
-        "username": "l7ana",
-        "avatar_url": "https://avatars.githubusercontent.com/u/59889633?v=4",
-        "url": "https://github.com/l7ana"
+        "username": "Adalovelox",
+        "avatar_url": "https://avatars.githubusercontent.com/u/116846923?v=4",
+        "url": "https://github.com/Adalovelox"
       },
       {
         "username": "Alexandra-Haynes",
@@ -154,9 +119,14 @@
         "url": "https://github.com/Hooobot"
       },
       {
-        "username": "Adalovelox",
-        "avatar_url": "https://avatars.githubusercontent.com/u/116846923?v=4",
-        "url": "https://github.com/Adalovelox"
+        "username": "MichaelTamaki",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13753033?v=4",
+        "url": "https://github.com/MichaelTamaki"
+      },
+      {
+        "username": "avenmia",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
+        "url": "https://github.com/avenmia"
       },
       {
         "username": "dancyy",
@@ -164,9 +134,39 @@
         "url": "https://github.com/dancyy"
       },
       {
+        "username": "dinoboy197",
+        "avatar_url": "https://avatars.githubusercontent.com/u/631178?v=4",
+        "url": "https://github.com/dinoboy197"
+      },
+      {
+        "username": "franciscocha",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23488684?v=4",
+        "url": "https://github.com/franciscocha"
+      },
+      {
+        "username": "kmal808",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20919083?v=4",
+        "url": "https://github.com/kmal808"
+      },
+      {
+        "username": "l7ana",
+        "avatar_url": "https://avatars.githubusercontent.com/u/59889633?v=4",
+        "url": "https://github.com/l7ana"
+      },
+      {
         "username": "lprimiano",
         "avatar_url": "https://avatars.githubusercontent.com/u/8732710?v=4",
         "url": "https://github.com/lprimiano"
+      },
+      {
+        "username": "lsollis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92566497?v=4",
+        "url": "https://github.com/lsollis"
+      },
+      {
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
       }
     ],
     "website": [
@@ -181,14 +181,19 @@
         "url": "https://github.com/Alexandra-Haynes"
       },
       {
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
+      },
+      {
         "username": "MichaelTamaki",
         "avatar_url": "https://avatars.githubusercontent.com/u/13753033?v=4",
         "url": "https://github.com/MichaelTamaki"
       },
       {
-        "username": "tyliec",
-        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
-        "url": "https://github.com/tyliec"
+        "username": "avenmia",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
+        "url": "https://github.com/avenmia"
       },
       {
         "username": "DerekMalone",
@@ -204,11 +209,6 @@
         "username": "kahookele",
         "avatar_url": "https://avatars.githubusercontent.com/u/130222500?v=4",
         "url": "https://github.com/kahookele"
-      },
-      {
-        "username": "avenmia",
-        "avatar_url": "https://avatars.githubusercontent.com/u/17712276?v=4",
-        "url": "https://github.com/avenmia"
       }
     ],
     "uipa": [
@@ -218,14 +218,19 @@
         "url": "https://github.com/ryankanno"
       },
       {
-        "username": "tyliec",
-        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
-        "url": "https://github.com/tyliec"
-      },
-      {
         "username": "keokilee",
         "avatar_url": "https://avatars.githubusercontent.com/u/191770?v=4",
         "url": "https://github.com/keokilee"
+      },
+      {
+        "username": "sthapa",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2693687?v=4",
+        "url": "https://github.com/sthapa"
+      },
+      {
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
       },
       {
         "username": "knowsuchagency",
@@ -236,6 +241,13 @@
         "username": "sakamosa",
         "avatar_url": "https://avatars.githubusercontent.com/u/14817912?v=4",
         "url": "https://github.com/sakamosa"
+      }
+    ],
+    "froide": [
+      {
+        "username": "tyliec",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
+        "url": "https://github.com/tyliec"
       }
     ],
     "docs": [
@@ -253,6 +265,63 @@
         "username": "tyliec",
         "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
         "url": "https://github.com/tyliec"
+      }
+    ],
+    "ACLU": [
+      {
+        "username": "felimartina",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15896345?v=4",
+        "url": "https://github.com/felimartina"
+      },
+      {
+        "username": "ryankanno",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57014?v=4",
+        "url": "https://github.com/ryankanno"
+      },
+      {
+        "username": "rbvea",
+        "avatar_url": "https://avatars.githubusercontent.com/u/949055?v=4",
+        "url": "https://github.com/rbvea"
+      },
+      {
+        "username": "mckaydavis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4591190?v=4",
+        "url": "https://github.com/mckaydavis"
+      },
+      {
+        "username": "lelandlopez",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2829114?v=4",
+        "url": "https://github.com/lelandlopez"
+      },
+      {
+        "username": "sthapa",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2693687?v=4",
+        "url": "https://github.com/sthapa"
+      },
+      {
+        "username": "bobbykimani",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32155161?v=4",
+        "url": "https://github.com/bobbykimani"
+      },
+      {
+        "username": "johnkmzhou",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25243410?v=4",
+        "url": "https://github.com/johnkmzhou"
+      },
+      {
+        "username": "wreppun",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1791503?v=4",
+        "url": "https://github.com/wreppun"
+      },
+      {
+        "username": "bradbaris",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2517831?v=4",
+        "url": "https://github.com/bradbaris"
+      },
+      {
+        "username": "bobzoller",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16850?v=4",
+        "url": "https://github.com/bobzoller"
       }
     ]
   }
