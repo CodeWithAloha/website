@@ -15,7 +15,9 @@ env:
       "HIERR"
       "website"
       "uipa"
+      "froide"
       "docs"
+      "ACLU"
     )
 jobs:
   gather-the-contributors:
