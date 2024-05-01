@@ -164,6 +164,11 @@
         "url": "https://github.com/lsollis"
       },
       {
+        "username": "scottfallen",
+        "avatar_url": "https://robohash.org/scottfallen",
+        "url": "https://www.linkedin.com/in/scottfallen/"
+      },
+      {
         "username": "tyliec",
         "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
         "url": "https://github.com/tyliec"
@@ -218,14 +223,14 @@
         "url": "https://github.com/ryankanno"
       },
       {
-        "username": "keokilee",
-        "avatar_url": "https://avatars.githubusercontent.com/u/191770?v=4",
-        "url": "https://github.com/keokilee"
-      },
-      {
         "username": "tyliec",
         "avatar_url": "https://avatars.githubusercontent.com/u/15609358?v=4",
         "url": "https://github.com/tyliec"
+      },
+      {
+        "username": "keokilee",
+        "avatar_url": "https://avatars.githubusercontent.com/u/191770?v=4",
+        "url": "https://github.com/keokilee"
       },
       {
         "username": "sthapa",
@@ -233,19 +238,29 @@
         "url": "https://github.com/sthapa"
       },
       {
-        "username": "knowsuchagency",
-        "avatar_url": "https://avatars.githubusercontent.com/u/11974795?v=4",
-        "url": "https://github.com/knowsuchagency"
-      },
-      {
         "username": "russtoku",
         "avatar_url": "https://avatars.githubusercontent.com/u/8532864?v=4",
         "url": "https://github.com/russtoku"
       },
       {
+        "username": "knowsuchagency",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11974795?v=4",
+        "url": "https://github.com/knowsuchagency"
+      },
+      {
+        "username": "afoolinschool",
+        "avatar_url": "https://avatars.githubusercontent.com/u/54926742?v=4",
+        "url": "https://github.com/afoolinschool"
+      },
+      {
         "username": "sakamosa",
         "avatar_url": "https://avatars.githubusercontent.com/u/14817912?v=4",
         "url": "https://github.com/sakamosa"
+      },
+      {
+        "username": "yenhtran",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7283964?v=4",
+        "url": "https://github.com/yenhtran"
       }
     ],
     "froide": [
