@@ -85,10 +85,10 @@ const Team = () => {
         Be part of our story
       </h4>
       <p className="text-sm xl:text-xl py-4 lg:px-12 text-center  xl:w-1/2">
-        You can join any
+        You can join any{" "}
         <a
           href="#join"
-          className="text-orange-500 hover:text-cyan-400 hover:underline underline-offset-4 px-2"
+          className="text-orange-500 hover:text-cyan-400 hover:underline underline-offset-4"
         >
           MeetUp
         </a>{" "}
